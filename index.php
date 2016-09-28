@@ -20,7 +20,7 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Blog_Web/');
 
-define('DIR_SECURE_FILENAME', 'default.html');
+define('DIR_SECURE_FILENAME', 'refuse.html');
 define('DIR_SECURE_CONTENT', '目录禁止');
 
 $_GET['m'] = 'User';
@@ -28,6 +28,6 @@ $_GET['c'] = 'User';
 $_GET['a'] = 'test';
 
 // 引入ThinkPHP入口文件
-require './ThinkPHP/ThinkPHP.php';
+require './vendor/topthink/thinkphp/ThinkPHP/ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单

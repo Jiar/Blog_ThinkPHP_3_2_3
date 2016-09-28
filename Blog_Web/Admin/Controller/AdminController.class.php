@@ -7,4 +7,5 @@ class AdminController extends Controller {
     public function admin(){
         $this->show('Admin');
     }
+
 }
