@@ -14,7 +14,6 @@ class RegisterController extends Controller {
 
     public function registerByWeb() {
         $user = D('User');
-        $data['id'] = 2;
         $data['name'] = $_POST['name'];
         $data['password'] = $_POST['password'];
         $data['email'] = $_POST['email'];
@@ -31,11 +30,10 @@ class RegisterController extends Controller {
 
         if (!$user->create($data)){ // 创建数据对象
             // 如果创建失败 表示验证没有通过 输出错误提示信息
-            var_dump($user->getError());
+            $this->ajaxReturn($user->getError(),'json');
         }else{
-//            $user->__set('name', '我改了名字,哈哈哈 ');
             // 验证通过 写入新增数据
-            var_dump($user->add());
+            $this->ajaxReturn($user->add(),'json');
         }
 
     }

@@ -6,7 +6,7 @@
  * Time: 上午11:21
  */
 
-namespace User\Model;
+namespace Api\Model;
 
 use Think\Model;
 
