@@ -1,0 +1,18 @@
+[ 2016-09-26T16:28:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载模块:Home
+
+[ 2016-09-26T16:28:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Home
+
+[ 2016-09-26T23:32:13+08:00 ] 127.0.0.1 /user.php/Login/login/username/Jiar/password/123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Login
+
