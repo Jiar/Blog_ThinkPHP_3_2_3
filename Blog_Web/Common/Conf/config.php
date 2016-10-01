@@ -3,6 +3,8 @@ return array(
     'URL_MODEL' => 2,
     'DEFAULT_MODULE' => 'User',
     'SHOW_PAGE_TRACE' => true,
+    'ACTION_SUFFIX' => 'Action',
+    'URL_HTML_SUFFIX' => '',
 
 //    'VAR_MODULE' => 'm',
 //    'VAR_CONTROLLER' => 'c',
@@ -16,6 +18,6 @@ return array(
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'blog_',
 
-    'TMPL_PATH' => './Public/Blog_Web/',
+//    'TMPL_PATH' => './Public/Blog_Web/',
 
 );

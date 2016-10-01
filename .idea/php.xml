@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Behat">
+    <behat_settings>
+      <BehatSettings behat_path="$PROJECT_DIR$" />
+    </behat_settings>
+  </component>
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="127.0.0.1" id="9f09fc9c-6709-4344-93f3-d8c3c85e54f8" name="Localhost9000_Xdebug" port="9000" />
+      <server debugger_id="php.debugger.ZendDebugger" host="127.0.0.1" id="c39ca003-60d1-456b-a7d5-0e49a3778c94" name="Localhost9091_Zend Debugger" port="9091" />
+    </servers>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />
 </project>

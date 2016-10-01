@@ -1,8 +1,6 @@
 .phpstorm.meta.php
 composer.lock
-/Runtime
-/Runtime/*
-/Uploads
-/Uploads/*
+/Blog_Web/Runtime
+/Blog_Web/Runtime/*
 /vendor
 /vendor/*
