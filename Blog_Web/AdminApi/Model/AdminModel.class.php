@@ -6,7 +6,7 @@
  * Time: 下午1:43
  */
 
-namespace Admin\Model;
+namespace AdminApi\Model;
 
 use Think\Model;
 
@@ -18,7 +18,6 @@ class AdminModel extends Model {
         array('email','email','未输入邮箱或格式错误'),
         array('email','checkEmail','该邮箱已被使用',self::MODEL_BOTH,'callback'),
         array('password','6,30','密码长度:6~30',self::EXISTS_VALIDATE,'length'),
-        array('password','repassword','两次密码输入不一致',self::EXISTS_VALIDATE,'confirm'),
     );
     protected $autoCheckFields = true;
     protected $_auto = array(
@@ -45,7 +44,7 @@ class AdminModel extends Model {
 
     private function getAdminByName($name) {
         $admin = D("Admin");
-        $result = $admin->getByName($name);
+        $result = $admin->getByName("$name");
         if(count($result) == 0) {
             return null;
         } else {

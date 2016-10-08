@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by: Jiar
+ * Github: https://www.github.com/Jiar/
+ * Date: 16/9/29
+ * Time: 下午1:32
+ */
+
 namespace Admin\Controller;
 
 use Think\Controller;
@@ -14,14 +21,10 @@ class AdminController extends Controller {
         }
     }
 
-    // 进入登录界面
+    // 进入登录、注册界面
     public function loginAction() {
         if(session('?adminId') && session('?adminToken')) {
             redirect('admin');
-//            $this->redirect(U('admin'));
-//            $this->redirect(T('admin'));
-//            $this->redirect('admin');
-//            $this->redirect(U('admin'));
         } else {
             $this->display('login');
         }

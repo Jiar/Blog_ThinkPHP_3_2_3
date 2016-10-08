@@ -6,11 +6,11 @@
  * Time: 下午1:43
  */
 
-namespace Admin\Model;
+namespace User\Model;
 
 use Think\Model;
 
-class AdminModel extends Model {
+class UserModel extends Model {
     protected $patchValidate = ture;
     protected $_validate = array(
         array('name','4,20','用户名长度长度范围:4~20',self::EXISTS_VALIDATE,'length'),
@@ -44,7 +44,7 @@ class AdminModel extends Model {
     }
 
     private function getAdminByName($name) {
-        $admin = D("Admin");
+        $admin = D("User");
         $result = $admin->getByName($name);
         if(count($result) == 0) {
             return null;
@@ -56,7 +56,7 @@ class AdminModel extends Model {
     }
 
     private function getAdminByEmail($email) {
-        $admin = D("Admin");
+        $admin = D("User");
         $result = $admin->getByEmail($email);
         if(count($result) == 0) {
             return null;
