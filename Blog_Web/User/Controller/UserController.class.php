@@ -15,7 +15,7 @@ class UserController extends Controller {
     // 进入主界面
     public function userAction() {
         if(session('?userId') && session('?userToken')) {
-            $this->display('user');
+            redirect('/User/Home/user/username/' .cookie('name') );
         } else {
             redirect('login');
         }
@@ -26,7 +26,7 @@ class UserController extends Controller {
         if(session('?userId') && session('?userToken')) {
             redirect('user');
         } else {
-            $this->display('login');
+            $this->display('User/login');
         }
     }
 
@@ -35,7 +35,7 @@ class UserController extends Controller {
         if(session('?userId') && session('?userToken')) {
             redirect('user');
         } else {
-            $this->display('register');
+            $this->display('User/register');
         }
     }
 
@@ -48,7 +48,7 @@ class UserController extends Controller {
         $data['repassword'] = I('post.repassword');
         $data['email'] = I('post.email');
         $data['token'] = sha1('TOKEN:' .$name .date('YmdHis'));
-        $data['createTime'] = date('Y-m-d H:i:s');
+        $data['create_time'] = date('Y-m-d H:i:s');
         $data['userurl'] = '/User/Home/' .$name;
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
@@ -94,7 +94,9 @@ class UserController extends Controller {
     public function signoutAction() {
         session('[destroy]');
         session('[regenerate]');
-        cookie(null);
+//        cookie(null);
+        cookie('name',null);
+        cookie('avatar',null);
         redirect('login');
     }
 
@@ -104,6 +106,7 @@ class UserController extends Controller {
             $id = $result['id'];
             $data['id'] = $id;
             $data['token'] = sha1('TOKEN:' .$result['name'] .date('YmdHis'));
+            $data['last_login_time'] = date('Y-m-d H:i:s');
             D('User')->save($data);
             $result = D('User')->select($id);
             $result = $result[0];

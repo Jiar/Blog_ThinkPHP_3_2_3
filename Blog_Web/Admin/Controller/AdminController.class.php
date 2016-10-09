@@ -39,7 +39,7 @@ class AdminController extends Controller {
         $data['repassword'] = I('post.repassword');
         $data['email'] = I('post.email');
         $data['token'] = sha1('TOKEN:' .$name .date('YmdHis'));
-        $data['createTime'] = date('Y-m-d H:i:s');
+        $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
         if (!$admin->create($data)){
@@ -94,6 +94,7 @@ class AdminController extends Controller {
             $id = $result['id'];
             $data['id'] = $id;
             $data['token'] = sha1('TOKEN:' .$result['name'] .date('YmdHis'));
+            $data['last_login_time'] = date('Y-m-d H:i:s');
             D('Admin')->save($data);
             $result = D('Admin')->select($id);
             $result = $result[0];

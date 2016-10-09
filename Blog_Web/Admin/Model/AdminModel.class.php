@@ -13,7 +13,7 @@ use Think\Model;
 class AdminModel extends Model {
     protected $patchValidate = ture;
     protected $_validate = array(
-        array('name','4,20','用户名长度长度范围:4~20',self::EXISTS_VALIDATE,'length'),
+        array('name','4,20','用户名长度范围:4~20',self::EXISTS_VALIDATE,'length'),
         array('name','checkName','该用户名已被使用',self::MODEL_BOTH,'callback'),
         array('email','email','未输入邮箱或格式错误'),
         array('email','checkEmail','该邮箱已被使用',self::MODEL_BOTH,'callback'),

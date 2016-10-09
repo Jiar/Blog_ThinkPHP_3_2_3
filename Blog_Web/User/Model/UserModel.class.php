@@ -13,7 +13,7 @@ use Think\Model;
 class UserModel extends Model {
     protected $patchValidate = ture;
     protected $_validate = array(
-        array('name','4,20','用户名长度长度范围:4~20',self::EXISTS_VALIDATE,'length'),
+        array('name','4,20','用户名长度范围:4~20',self::EXISTS_VALIDATE,'length'),
         array('name','checkName','该用户名已被使用',self::MODEL_BOTH,'callback'),
         array('email','email','未输入邮箱或格式错误'),
         array('email','checkEmail','该邮箱已被使用',self::MODEL_BOTH,'callback'),
@@ -23,10 +23,6 @@ class UserModel extends Model {
     protected $autoCheckFields = true;
     protected $_auto = array(
         array('password', 'sha1', self::MODEL_BOTH, 'function'),
-    );
-
-    protected $_scope = array(
-
     );
 
     protected function checkName($name) {
@@ -44,8 +40,8 @@ class UserModel extends Model {
     }
 
     private function getAdminByName($name) {
-        $admin = D("User");
-        $result = $admin->getByName($name);
+        $user = D("User");
+        $result = $user->getByName($name);
         if(count($result) == 0) {
             return null;
         } else {
@@ -56,8 +52,8 @@ class UserModel extends Model {
     }
 
     private function getAdminByEmail($email) {
-        $admin = D("User");
-        $result = $admin->getByEmail($email);
+        $user = D("User");
+        $result = $user->getByEmail($email);
         if(count($result) == 0) {
             return null;
         } else {

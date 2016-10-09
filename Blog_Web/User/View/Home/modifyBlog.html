@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改博客</title>
+</head>
+<body>
+
+<div align="center">
+    <h2>修改博客</h2>
+    <form method="post" action="{:U('/User/Home/modifyBlogForm')}">
+        <input type="hidden" name="id" value="{:$blog[id]}">
+        <p>标题:<input type="text" name="title" placeholder="请输入博客标题" value="{:$blog[title]}"/></p>
+        内容:<textarea name="content" placeholder="请输入博客内容">{:$blog[content]}</textarea>
+        <p><input type="submit" value="修改"></p>
+    </form>
+</div>
+
+</body>
+</html>
