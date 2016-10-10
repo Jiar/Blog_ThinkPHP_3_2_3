@@ -13,25 +13,29 @@
         <h4>{$Think.get.username}的个人主页</h4>
     </div>
 
-    <div id="user" style="float:right">
-        <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
+    <div id="right_float" style="float:right">
+
+        <div id="user">
+            <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
                 <a href="{:U('/User/User/user')}"><span>{$Think.cookie.name}</span></a>
                 <a href="{:U('/User/User/user')}"><img src="{$Think.cookie.avatar}" alt="头像" width="36px" height="36px" style="border-radius: 50%;"/></a>
                 <p><a href="{:U('/User/User/signout')}">退出登录</a></p>
-            <else />
+                <else />
                 <a href="{:U('/User/User/login')}">登录</a>
-        </if>
-        <br/>
-        <br/>
+            </if>
+            <br/>
+            <br/>
+        </div>
+
+        <div id="dashboard">
+            <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
+                <p><a href="{:U('/User/Home/addBlog')}">添加博客</a></p>
+            </if>
+        </div>
+
     </div>
 
-    <div id="dashboard" style="float:right">
-        <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
-            <p><a href="{:U('/User/Home/addBlog')}">添加博客</a></p>
-        </if>
-    </div>
-
-    <div id="blogs" align="center">
+    <div id="blogs" align="center" style="clear:both">
         <volist name="blogs" id="blog">
             <p><a href="{:U('/User/Home/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}">{$blog.title}</a></p>
             <p>{$blog.create_time}</p>
