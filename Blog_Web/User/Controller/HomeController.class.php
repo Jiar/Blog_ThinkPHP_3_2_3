@@ -40,7 +40,6 @@ class HomeController extends Controller {
         $blog = D('Blog');
         $data['user_id'] = session('userId');
         $blog = $blog->where($data)->order('blog_id desc')->select();
-        trace($blog[0]);
         $blog_id = $blog[0]['blog_id']+1;
         $blog = D('Blog');
         $data['title'] = I('post.title');
