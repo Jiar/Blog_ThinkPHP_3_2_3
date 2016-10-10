@@ -6,7 +6,19 @@
 </head>
 <body>
 
-<div align="center">
+<div id="user" style="float:right">
+    <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
+        <a href="{:U('/User/User/user')}"><span>{$Think.cookie.name}</span></a>
+        <a href="{:U('/User/User/user')}"><img src="{$Think.cookie.avatar}" alt="头像" width="36px" height="36px" style="border-radius: 50%;"/></a>
+        <p><a href="{:U('/User/User/signout')}">退出登录</a></p>
+        <else />
+        <a href="{:U('/User/User/login')}">登录</a>
+    </if>
+    <br/>
+    <br/>
+</div>
+
+<div id="content" align="center">
     <h2>添加博客</h2>
     <form method="post" action="{:U('/User/Home/addBlogForm')}">
         <p>标题:<input type="text" name="title" placeholder="请输入博客标题"/></p>

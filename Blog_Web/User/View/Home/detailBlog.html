@@ -19,14 +19,14 @@
 </div>
 
 <div id="content" align="center">
-    <h2>修改博客</h2>
-    <form method="post" action="{:U('/User/Home/modifyBlogForm')}">
-        <input type="hidden" name="user_id" value="{:$blog['user_id']}">
-        <input type="hidden" name="blog_id" value="{:$blog['blog_id']}">
-        <p>标题:<input type="text" name="title" placeholder="请输入博客标题" value="{:$blog['title']}"/></p>
-        内容:<textarea name="content" placeholder="请输入博客内容">{:$blog[content]}</textarea>
-        <p><input type="submit" value="修改"></p>
-    </form>
+    <h4>{:$blog[title]}</h4>
+    <h4>{:$blog[user]}</h4>
+    <h6>{:$blog[create_time]}</h6>
+    <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken']) && $_SESSION['userId'] == $userId">
+        <p><a href="{:U('/User/Home/modifyBlog',array('userId'=>$blog['user_id'], 'blogId'=>$blog['blog_id']))}">修改</a></p>
+        <p><a href="{:U('/User/Home/deleteBlog',array('userId'=>$blog['user_id'], 'blogId'=>$blog['blog_id']))}">删除</a></p>
+    </if>
+    <p>{:$blog[content]}</p>
 </div>
 
 </body>

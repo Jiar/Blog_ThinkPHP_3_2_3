@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{$Think.get.username}的个人主页</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
 </head>
 <body>
-
 
 <div id="content">
 
@@ -13,10 +13,10 @@
         <h4>{$Think.get.username}的个人主页</h4>
     </div>
 
-    <div id="user" align="right">
+    <div id="user" style="float:right">
         <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
-                <span>{$Think.cookie.name}</span>
-                <img src="{$Think.cookie.avatar}" alt="头像" width="36px" height="36px" style="border-radius: 50%;"/>
+                <a href="{:U('/User/User/user')}"><span>{$Think.cookie.name}</span></a>
+                <a href="{:U('/User/User/user')}"><img src="{$Think.cookie.avatar}" alt="头像" width="36px" height="36px" style="border-radius: 50%;"/></a>
                 <p><a href="{:U('/User/User/signout')}">退出登录</a></p>
             <else />
                 <a href="{:U('/User/User/login')}">登录</a>
@@ -25,7 +25,7 @@
         <br/>
     </div>
 
-    <div id="dashboard" align="right">
+    <div id="dashboard" style="float:right">
         <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
             <p><a href="{:U('/User/Home/addBlog')}">添加博客</a></p>
         </if>
@@ -33,15 +33,17 @@
 
     <div id="blogs" align="center">
         <volist name="blogs" id="blog">
-            <p>标题:{$blog.title}</p>
-            <p>创建时间:{$blog.create_time}</p>
+            <p><a href="{:U('/User/Home/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}">{$blog.title}</a></p>
+            <p>{$blog.create_time}</p>
             <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken']) && $_SESSION['userId'] == $userId">
-                <p><a href="{:U('/User/Home/modifyBlog',array('blogId'=>$blog['id']))}">修改</a></p>
-                <p><a href="{:U('/User/Home/deleteBlog',array('blogId'=>$blog['id']))}">删除</a></p>
+                <p><a href="{:U('/User/Home/modifyBlog',array('userId'=>$blog['user_id'], 'blogId'=>$blog['blog_id']))}">修改</a></p>
+                <p><a href="{:U('/User/Home/deleteBlog',array('userId'=>$blog['user_id'], 'blogId'=>$blog['blog_id']))}">删除</a></p>
             </if>
+            <br/>
+            <br/>
+            <br/>
         </volist>
     </div>
-
 
 </div>
 
