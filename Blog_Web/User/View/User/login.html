@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="/Public/Static/">-->
+
     <title>用户登录</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Public/Static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/Public/Static/css/navbar-static-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/Public/Static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/Public/Static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
-<div align="center">
-    <h2>用户登录</h2>
-    <h5><a href="/User/User/register">没有账户?去注册</a></h5>
-    <form method="post" action="/User/User/signin">
-        <p>账户:<input type="text" name="account" placeholder="请输入用户名/邮箱"/></p>
-        <p>密码:<input type="password" name="password" placeholder="请输入密码"/></p>
-        <p><input type="submit" value="登录"></p>
-    </form>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">bloing</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="">占位1</a></li>
+                <li><a href="">占位2</a></li>
+                <li><a href="">占位3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{:U('/User/User/register')}">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想搜点什么呢~">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div align="center">
+        <h3>用户登录</h3>
+        <h6><a href="{:U('/User/User/register')}">没有账户?去注册</a></h6>
+
+        <form class="form-horizontal" role="form" method="post" action="{:U('/User/User/signin')}">
+            <div class="form-group">
+                <input type="text" class="form-control" name="account" placeholder="请输入用户名/邮箱">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">登录</button>
+            </div>
+        </form>
+
+    </div>
+
 </div>
 
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="/Public/Static/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/Public/Static/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

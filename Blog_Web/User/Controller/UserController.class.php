@@ -53,7 +53,7 @@ class UserController extends Controller {
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
         if (!$user->create($data)){
-            $this->error($user->getError());
+            $this->error(structureErrorInfo($user->getError()));
         }else{
             $result = D('User')->select($user->add());
             $result = $result[0];

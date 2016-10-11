@@ -48,9 +48,9 @@ class HomeController extends Controller {
         $data['content'] = I('post.content');
         $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
-        if (!$blog->create($data)){
-            $this->error($blog->getError());
-        }else{
+        if(!$blog->create($data)) {
+            $this->error(structureErrorInfo($blog->getError()));
+        } else {
             $blog->add();
             redirect('/User/User/user');
         }
@@ -120,7 +120,7 @@ class HomeController extends Controller {
             return;
         }
         $blog = $blog[0];
-        $blog['user'] = $user;
+        $blog['username'] = $user;
         $this->assign('blog', $blog);
         $this->assign('userId', $userId);
         $this->display('Home/detailBlog');

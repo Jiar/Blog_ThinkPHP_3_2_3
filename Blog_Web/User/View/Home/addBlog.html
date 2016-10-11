@@ -1,31 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="/Public/Static/">-->
+
     <title>添加博客</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Public/Static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/Public/Static/css/navbar-static-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/Public/Static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/Public/Static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
-<div id="user" style="float:right">
-    <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
-        <a href="{:U('/User/User/user')}"><span>{$Think.cookie.name}</span></a>
-        <a href="{:U('/User/User/user')}"><img src="{$Think.cookie.avatar}" alt="头像" width="36px" height="36px" style="border-radius: 50%;"/></a>
-        <p><a href="{:U('/User/User/signout')}">退出登录</a></p>
-        <else />
-        <a href="{:U('/User/User/login')}">登录</a>
-    </if>
-    <br/>
-    <br/>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">bloing</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{:U('/User/Home/user', array('username'=>$_COOKIE['name']))}">{$Think.cookie.name}的个人主页</a></li>
+                <li><a href="">占位1</a></li>
+                <li><a href="">占位2</a></li>
+                <li><a href="">占位3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken'])">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">{$Think.cookie.name}<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{:U('/User/Home/user', array('username'=>$_COOKIE['name']))}">我的主页</a></li>
+                            <li><a href="{:U('/User/Home/addBlog')}">添加博客</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{:U('/User/User/signout')}">退出登录</a></li>
+                        </ul>
+                    </li>
+                    <else />
+                    <li><a href="{:U('/User/User/login')}">登录</a></li>
+                </if>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想搜点什么呢~">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div align="center">
+        <h3>添加博客</h3>
+        <br/>
+
+        <form class="form-horizontal" role="form" method="post" action="{:U('/User/Home/addBlogForm')}">
+            <div class="form-group">
+                <input type="text" class="form-control" name="title" placeholder="请输入博客标题">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="14" name="content" style="resize: none;" placeholder="请输入博客内容"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">添加</button>
+            </div>
+        </form>
+
+    </div>
+
 </div>
 
-<div id="content" align="center" style="clear:both">
-    <h2>添加博客</h2>
-    <form method="post" action="{:U('/User/Home/addBlogForm')}">
-        <p>标题:<input type="text" name="title" placeholder="请输入博客标题"/></p>
-        内容:<textarea name="content" placeholder="请输入博客内容"></textarea>
-        <p><input type="submit" value="添加"></p>
-    </form>
-</div>
-
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="/Public/Static/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/Public/Static/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

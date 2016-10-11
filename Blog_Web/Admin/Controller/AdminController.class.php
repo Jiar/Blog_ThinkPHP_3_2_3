@@ -43,7 +43,7 @@ class AdminController extends Controller {
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
         if (!$admin->create($data)){
-            $this->error($admin->getError());
+            $this->error(structureErrorInfo($admin->getError()));
         }else{
             $result = D('Admin')->select($admin->add());
             $result = $result[0];

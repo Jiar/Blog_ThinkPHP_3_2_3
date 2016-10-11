@@ -13,7 +13,7 @@ use Think\Model;
 class BlogModel extends Model {
     protected $patchValidate = ture;
     protected $_validate = array(
-        array('title','1,20','标题长度范围:1~20',self::EXISTS_VALIDATE,'length'),
+        array('title','1,50','标题长度范围:1~50',self::EXISTS_VALIDATE,'length'),
         array('content','require','必须输入内容！'),
     );
 
