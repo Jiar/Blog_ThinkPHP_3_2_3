@@ -39,6 +39,31 @@ class UserController extends Controller {
         }
     }
 
+    // 登录操作
+    public function signinAction() {
+        if(session('?userId') && session('?userToken')) {
+            redirect('user');
+        } else {
+            $account = I('post.account');
+            $password = sha1(I("post.password"));
+            if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
+                // 邮箱登录
+                $data['email'] = $account;
+                $data['password'] = $password;
+                $result = D('User')->where($data)->select();
+                $result = $result[0];
+                $this->saveDataBySignin($result);
+            } else {
+                // 用户登录
+                $data['name'] = $account;
+                $data['password'] = $password;
+                $result = D('User')->where($data)->select();
+                $result = $result[0];
+                $this->saveDataBySignin($result);
+            }
+        }
+    }
+
     // 注册操作
     public function signupAction() {
         $user = D('User');
@@ -62,31 +87,6 @@ class UserController extends Controller {
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
             redirect('user');
-        }
-    }
-
-    // 登录操作
-    public function signinAction() {
-        if(session('?userId') && session('?userToken')) {
-            redirect('user');
-        } else {
-            $account = I('post.account');
-            $password = sha1(I("post.password"));
-            if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
-                // 邮箱登录
-                $data['email'] = $account;
-                $data['password'] = $password;
-                $result = D('User')->where($data)->select();
-                $result = $result[0];
-                $this->saveDataBySignin($result);
-            } else {
-                // 用户登录
-                $data['name'] = $account;
-                $data['password'] = $password;
-                $result = D('User')->where($data)->select();
-                $result = $result[0];
-                $this->saveDataBySignin($result);
-            }
         }
     }
 

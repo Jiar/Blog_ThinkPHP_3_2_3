@@ -30,28 +30,12 @@ class AdminController extends Controller {
         }
     }
 
-    // 注册操作
-    public function signupAction() {
-        $admin = D('Admin');
-        $name = I('post.name');
-        $data['name'] = $name;
-        $data['password'] = I('post.password');
-        $data['repassword'] = I('post.repassword');
-        $data['email'] = I('post.email');
-        $data['token'] = sha1('TOKEN:' .$name .date('YmdHis'));
-        $data['create_time'] = date('Y-m-d H:i:s');
-        $data['last_modify_time'] = date('Y-m-d H:i:s');
-        $data['last_login_time'] = date('Y-m-d H:i:s');
-        if (!$admin->create($data)){
-            $this->error(structureErrorInfo($admin->getError()));
-        }else{
-            $result = D('Admin')->select($admin->add());
-            $result = $result[0];
-            session('adminId', $result['id']);
-            session('adminToken', $result['token']);
-            cookie('name',$result['name']);
-            cookie('avatar',$result['avatar']);
+    // 进入注册界面
+    public function registerAction() {
+        if(session('?adminId') && session('?adminToken')) {
             redirect('admin');
+        } else {
+            $this->display('register');
         }
     }
 
@@ -80,11 +64,38 @@ class AdminController extends Controller {
         }
     }
 
+    // 注册操作
+    public function signupAction() {
+        $admin = D('Admin');
+        $name = I('post.name');
+        $data['name'] = $name;
+        $data['password'] = I('post.password');
+        $data['repassword'] = I('post.repassword');
+        $data['email'] = I('post.email');
+        $data['token'] = sha1('TOKEN:' .$name .date('YmdHis'));
+        $data['create_time'] = date('Y-m-d H:i:s');
+        $data['last_modify_time'] = date('Y-m-d H:i:s');
+        $data['last_login_time'] = date('Y-m-d H:i:s');
+        if (!$admin->create($data)){
+            $this->error(structureErrorInfo($admin->getError()));
+        }else{
+            $result = D('Admin')->select($admin->add());
+            $result = $result[0];
+            session('adminId', $result['id']);
+            session('adminToken', $result['token']);
+            cookie('name',$result['name']);
+            cookie('avatar',$result['avatar']);
+            redirect('admin');
+        }
+    }
+
     // 退出操作
     public function signoutAction() {
         session('[destroy]');
         session('[regenerate]');
-        cookie(null);
+//        cookie(null);
+        cookie('name',null);
+        cookie('avatar',null);
         redirect('login');
     }
 

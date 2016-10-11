@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/Public/Static/css/navbar-static-top.css" rel="stylesheet">
+    <link href="/Public/Static/css/form-signin-signup.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="/Public/Static/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -63,10 +64,10 @@
 <div class="container">
 
     <div align="center">
-        <h3>用户注册</h3>
-        <h6><a href="{:U('/User/User/login')}">已有账户?去登录</a></h6>
 
-        <form class="form-horizontal" role="form" method="post" action="{:U('/User/User/signup')}">
+        <form class="form-horizontal form-signin-signup" role="form" method="post" action="{:U('/User/User/signup')}">
+            <h3 class="form-signin-signup-heading">用户注册</h3>
+            <h6><a href="{:U('/User/User/login')}">已有账户?去登录</a></h6>
             <div class="form-group">
                 <input type="email" class="form-control" name="email" placeholder="请输入邮箱">
             </div>

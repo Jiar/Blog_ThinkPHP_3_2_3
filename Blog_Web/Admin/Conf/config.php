@@ -3,7 +3,7 @@ return array(
 	//'配置项'=>'配置值'
     'DEFAULT_CONTROLLER'    =>  'Admin', // 默认控制器名称
     'DEFAULT_ACTION'        =>  'admin', // 默认操作名称
-    'URL_HTML_SUFFIX'       =>  'html',
+//    'URL_HTML_SUFFIX'       =>  '',
 
 //    'VIEW_PATH' => './Public/Blog_Web/Controller/Theme/',
 //    'DEFAULT_THEME' => 'default',
