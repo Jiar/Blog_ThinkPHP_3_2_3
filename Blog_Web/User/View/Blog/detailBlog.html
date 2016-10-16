@@ -39,11 +39,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">bloing</a>
+            <a class="navbar-brand" href="">Bloing</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{:U('/User/Home/user', array('username'=>$blog['username']))}">{:$blog['username']}的个人主页</a></li>
+                <li><a href="{:U('/User/Home/user', array('username'=>$blog['user']))}">{:$blog['user']}的个人主页</a></li>
                 <li><a href="">占位1</a></li>
                 <li><a href="">占位2</a></li>
                 <li><a href="">占位3</a></li>
@@ -76,9 +76,10 @@
 <div class="container">
 
     <div align="center">
-        <h3>{:$blog['title']}</h3>
-        <h5>{:$blog['user']}</h5>
-        <h6>{:$blog['create_time']}</h6>
+        <h3>{$blog['title']}</h3>
+        <h5>{$blog['user']}</h5>
+        <h5>浏览次数: {$blog['read_count']}</h5>
+        <h6>创建时间: {$blog['create_time']}</h6>
         <if condition="isset($_SESSION['userId']) && isset($_SESSION['userToken']) && $_SESSION['userId'] == $userId">
             <p>
             <a type="button" class="btn btn-default btn-xs" href="{:U('/User/Blog/modifyBlog',array('userId'=>$blog['user_id'], 'blogId'=>$blog['blog_id']))}">修改</a>
@@ -86,7 +87,7 @@
             </p>
         </if>
         <br/>
-        <p class="jumbotron">{:$blog['content']}</p>
+        <p class="jumbotron">{$blog['content']}</p>
     </div>
 
 </div>

@@ -18,6 +18,12 @@
     <!-- MetisMenu CSS -->
     <link href="/Public/Static/css/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="/Public/Static/css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="/Public/Static/css/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Timeline CSS -->
     <link href="/Public/Static/css/timeline.css" rel="stylesheet">
 
@@ -80,7 +86,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav in" id="side-menu">
                     <li>
-                        <a href="{:U('Admin/Admin/admin')}" class="active"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
+                        <a href="{:U('Admin/Admin/admin')}"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
                     </li>
                     <li>
                         <a href="{:U('Admin/BlogManage/index')}"><i class="fa fa-file-text fa-fw"></i> 博客管理<span class="fa arrow"></span></a>
@@ -167,11 +173,40 @@
     <div id="page-wrapper" style="min-height: 299px;">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">控制台</h1>
+                <h1 class="page-header">博客详情</h1>
             </div>
             <!-- /.col-lg-12 -->
-        </div>
 
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        博客详情
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+
+                        <div align="center">
+                            <h3>{$blog['title']}</h3>
+                            <h5><a type="button" class="btn btn-default btn-xs" href="{:U('/Admin/UserManage/detailUser', array('id'=>$blog['user_id']))}">{$blog['user_name']}</a></h5>
+                            <h5>浏览次数: {$blog['read_count']}</h5>
+                            <h6>创建时间: {$blog['create_time']}</h6>
+                            <p>
+                                <if condition="$blog['is_block'] == 0">
+                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">屏蔽</a>
+                                    <else />
+                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">恢复</a>
+                                </if>
+                            </p>
+                            <p class="jumbotron">{$blog['content']}</p>
+                        </div>
+
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+
+        </div>
 
     </div>
     <!-- /#page-wrapper -->
@@ -187,6 +222,10 @@
 
 <!-- Metis Menu Plugin JavaScript -->
 <script src="/Public/Static/js/metisMenu.min.js"></script>
+
+<!-- DataTables JavaScript -->
+<script src="/Public/Static/js/jquery.dataTables.min.js"></script>
+<script src="/Public/Static/js/dataTables.bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="/Public/Static/js/bloing-admin.js"></script>

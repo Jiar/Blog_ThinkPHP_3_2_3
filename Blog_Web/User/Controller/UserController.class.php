@@ -52,6 +52,10 @@ class UserController extends Controller {
                 $data['password'] = $password;
                 $result = D('User')->where($data)->select();
                 $result = $result[0];
+                if($result['is_block'] == 1) {
+                    $this->error('该用户已被管理员屏蔽');
+                    return;
+                }
                 $this->saveDataBySignin($result);
             } else {
                 // 用户登录
@@ -59,6 +63,10 @@ class UserController extends Controller {
                 $data['password'] = $password;
                 $result = D('User')->where($data)->select();
                 $result = $result[0];
+                if($result['is_block'] == 1) {
+                    $this->error('该用户已被管理员屏蔽');
+                    return;
+                }
                 $this->saveDataBySignin($result);
             }
         }

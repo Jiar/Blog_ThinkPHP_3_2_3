@@ -52,6 +52,17 @@ class AdminController extends Controller {
                 $data['password'] = $password;
                 $result = D('Admin')->where($data)->select();
                 $result = $result[0];
+                if($result['is_examine'] == 0) {
+                    $this->error('该账户还在审核中，请耐心等待');
+                    return;
+                } else if($result['is_examine'] == 2) {
+                    $this->error('该账户审核被拒绝，您可以重新注册');
+                    return;
+                }
+                if($result['is_block'] == 1) {
+                    $this->error('该账户已被屏蔽');
+                    return;
+                }
                 $this->saveDataBySignin($result);
             } else {
                 // 用户登录
@@ -59,6 +70,17 @@ class AdminController extends Controller {
                 $data['password'] = $password;
                 $result = D('Admin')->where($data)->select();
                 $result = $result[0];
+                if($result['is_examine'] == 0) {
+                    $this->error('该账户还在审核中，请耐心等待');
+                    return;
+                } else if($result['is_examine'] == 2) {
+                    $this->error('该账户审核被拒绝，您可以重新注册');
+                    return;
+                }
+                if($result['is_block'] == 1) {
+                    $this->error('该账户已被屏蔽');
+                    return;
+                }
                 $this->saveDataBySignin($result);
             }
         }
@@ -66,7 +88,6 @@ class AdminController extends Controller {
 
     // 注册操作
     public function signupAction() {
-        $admin = D('Admin');
         $name = I('post.name');
         $data['name'] = $name;
         $data['password'] = I('post.password');
@@ -76,16 +97,17 @@ class AdminController extends Controller {
         $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
+        $id = $this->getExamineRefuseId($data['name'], $data['email']);
+        if($id) {
+            $admin = D("Admin");
+            $admin->delete($id);
+        }
+        $admin = D('Admin');
         if (!$admin->create($data)){
             $this->error(structureErrorInfo($admin->getError()));
-        }else{
-            $result = D('Admin')->select($admin->add());
-            $result = $result[0];
-            session('adminId', $result['id']);
-            session('adminToken', $result['token']);
-            cookie('name',$result['name']);
-            cookie('avatar',$result['avatar']);
-            redirect('admin');
+        } else {
+            $admin->add();
+            redirect('login');
         }
     }
 
@@ -93,7 +115,6 @@ class AdminController extends Controller {
     public function signoutAction() {
         session('[destroy]');
         session('[regenerate]');
-//        cookie(null);
         cookie('name',null);
         cookie('avatar',null);
         redirect('login');
@@ -117,6 +138,25 @@ class AdminController extends Controller {
         } else {
             $this->error('账户或密码错误');
         }
+    }
+
+    // 检查注册信息中的name、email是否是审核被拒绝的管理员，如果是，返回id
+    private function getExamineRefuseId($name, $email) {
+        $admin = D("Admin");
+        $result = $admin->getByName($name);
+        if(count($result) != 0) {
+            if($result['is_examine'] == 2) {
+                return $result['id'];
+            }
+        }
+        $admin = D("Admin");
+        $result = $admin->getByEmail($email);
+        if(count($result) != 0) {
+            if($result['is_examine'] == 2) {
+                return $result['id'];
+            }
+        }
+        return false;
     }
 
 }

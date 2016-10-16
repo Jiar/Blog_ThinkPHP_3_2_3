@@ -50,7 +50,6 @@ class AdminModel extends Model {
             return null;
         } else {
             $result['password'] = null;
-            trace($result);
             return $result;
         }
     }
@@ -62,7 +61,6 @@ class AdminModel extends Model {
             return null;
         } else {
             $result['password'] = null;
-            trace($result);
             return $result;
         }
     }

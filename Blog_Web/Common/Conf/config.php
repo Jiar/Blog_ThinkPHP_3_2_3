@@ -17,7 +17,6 @@ return array(
     'DB_NAME' => 'Blog_ThinkPHP3.2.3',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'blog_',
-
 //    'TMPL_PATH' => './Public/Blog_Web/',
 
 );

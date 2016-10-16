@@ -105,7 +105,18 @@ class BlogController extends Controller {
             return;
         }
         $blog = $blog[0];
-        $blog['username'] = $user;
+        if($blog['is_block'] == 1) {
+            $this->error('该文章已被管理员屏蔽，无法查看详情。');
+            return;
+        }
+        $read_count = $blog['read_count']+1;
+        $where['user_id'] = $userId;
+        $where['blog_id'] = $blogId;
+        $data['read_count'] = $read_count;
+        $save = D('Blog');
+        $save->where($where)->save($data);
+        $blog['user'] = $user;
+        $blog['read_count'] = $read_count;
         $this->assign('blog', $blog);
         $this->assign('userId', $userId);
         $this->display('Blog/detailBlog');
