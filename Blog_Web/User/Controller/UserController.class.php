@@ -52,6 +52,10 @@ class UserController extends Controller {
                 $data['password'] = $password;
                 $result = D('User')->where($data)->select();
                 $result = $result[0];
+                if(count($result) == 0) {
+                    $this->error('该用户不存在');
+                    return;
+                }
                 if($result['is_block'] == 1) {
                     $this->error('该用户已被管理员屏蔽');
                     return;
@@ -63,6 +67,10 @@ class UserController extends Controller {
                 $data['password'] = $password;
                 $result = D('User')->where($data)->select();
                 $result = $result[0];
+                if(count($result) == 0) {
+                    $this->error('该用户不存在');
+                    return;
+                }
                 if($result['is_block'] == 1) {
                     $this->error('该用户已被管理员屏蔽');
                     return;

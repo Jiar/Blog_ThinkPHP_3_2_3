@@ -52,6 +52,10 @@ class AdminController extends Controller {
                 $data['password'] = $password;
                 $result = D('Admin')->where($data)->select();
                 $result = $result[0];
+                if(count($result) == 0) {
+                    $this->error('该账户不存在');
+                    return;
+                }
                 if($result['is_examine'] == 0) {
                     $this->error('该账户还在审核中，请耐心等待');
                     return;
@@ -70,6 +74,10 @@ class AdminController extends Controller {
                 $data['password'] = $password;
                 $result = D('Admin')->where($data)->select();
                 $result = $result[0];
+                if(count($result) == 0) {
+                    $this->error('该账户不存在');
+                    return;
+                }
                 if($result['is_examine'] == 0) {
                     $this->error('该账户还在审核中，请耐心等待');
                     return;

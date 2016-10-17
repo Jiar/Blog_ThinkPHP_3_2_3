@@ -25,7 +25,7 @@ return array(
 //    'REQUIRE_AUTH_MODULE' => 'BlogManage,UserManage',   // 需要认证模块Controller
 //    'NOT_AUTH_MODULE' => 'Public',            // 无需认证模块
     'USER_AUTH_GATEWAY' => '/Admin/Admin/login', // 认证网关
-    'USER_AUTH_MODEL' => 'blog_admin',
+//    'USER_AUTH_MODEL' => 'blog_admin',
     'RBAC_ROLE_TABLE' => 'blog_admin_role', // 角色表名称
     'RBAC_USER_TABLE' => 'blog_admin_role_admin', // 用户表名称
     'RBAC_ACCESS_TABLE' => 'blog_admin_access', // 权限表名称
