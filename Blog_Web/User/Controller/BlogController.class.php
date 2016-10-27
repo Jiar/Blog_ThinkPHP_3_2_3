@@ -74,7 +74,7 @@ class BlogController extends Controller {
         redirect(U('User/user'));
     }
 
-    public function deleteBlogAction($userId, $blogId) {
+    public function deleteBlog_action($userId, $blogId) {
         if(session('?userId') != $userId) {
             $this->error('无法删除别人的博客');
             return;
@@ -88,7 +88,7 @@ class BlogController extends Controller {
         redirect(U('User/user'));
     }
 
-    public function detailBlogAction($user,$blogId) {
+    public function detailBlog_action($user,$blogId) {
         $tempUser = D("User");
         $result = $tempUser->getByName($user);
         if(count($result) == 0) {
