@@ -2,7 +2,7 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">&copy; Palcomm <?php echo date('Y',time()); ?></p>
+            <p class="text-muted">Jiar <?php echo date('Y',time()); ?></p>
         </div>
     </footer>
 	<!-- javascript -->
