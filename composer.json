@@ -1,6 +1,5 @@
 {
   "require": {
-    "topthink/thinkphp":"3.2.3",
-    "phpDocumentor/phpDocumentor":""
+    "topthink/thinkphp":"3.2.3"
   }
 }
