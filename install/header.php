@@ -22,11 +22,6 @@
 	<body>
     <div class="container">
         <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation"><a href="http://my.oschina.net/u/2503185/blog"  target="_blank">Help</a></li>
-                </ul>
-            </nav>
             <h3 class="text-muted">Palcomm Qwechat&Project install</h3>
         </div>
         <div class="row marketing">

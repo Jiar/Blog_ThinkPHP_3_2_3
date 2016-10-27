@@ -10,7 +10,7 @@ if($step == 3)
 {
 	$status = 1;
 	exec(KOL_ROOT."init &",$output,$status);
-	exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/develop',$output,$status);
+	exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/master',$output,$status);
 	if ($status == 0){
 	     echo '<script type="text/javascript"> alert("发布成功") </script>';
 //	    echo
