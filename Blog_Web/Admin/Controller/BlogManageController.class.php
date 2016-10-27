@@ -49,7 +49,7 @@ class BlogManageController extends BaseController {
         $data['is_block'] = $blog['is_block']==0?1:0;
         $blog = D('Blog');
         $blog->where($where)->save($data);
-        redirect('/Admin/BlogManage/allBlogs');
+        redirect(U('BlogManage/allBlogs'));
     }
 
 }

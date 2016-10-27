@@ -203,13 +203,13 @@
                                         </td>
                                         <td>{$user['create_time']}</td>
                                         <td>
-                                            <a type="button" class="btn btn-default btn-xs" href="{:U('/Admin/UserManage/detailUser', array('id'=>$user['id']))}">{$user['name']}</a>
+                                            <a type="button" class="btn btn-default btn-xs" href="{:U('Admin/UserManage/detailUser', array('id'=>$user['id']))}">{$user['name']}</a>
                                         </td>
                                         <td>
                                             <if condition="$user['is_block'] == 0">
-                                                <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/UserManage/blockUser', array('id'=>$user['id']))}">屏蔽</a>
+                                                <a type="button" class="btn btn-danger btn-xs" href="{:U('Admin/UserManage/blockUser', array('id'=>$user['id']))}">屏蔽</a>
                                                 <else />
-                                                <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/UserManage/blockUser', array('id'=>$user['id']))}">恢复</a>
+                                                <a type="button" class="btn btn-primary btn-xs" href="{:U('Admin/UserManage/blockUser', array('id'=>$user['id']))}">恢复</a>
                                             </if>
                                         </td>
                                     </tr>

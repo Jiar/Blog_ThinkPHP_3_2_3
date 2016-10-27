@@ -178,8 +178,8 @@
                             <p><img src="{$admin['avatar']}" alt="{$admin['name']}" style="width:70px; height:70px; border-radius:50%; margin-top:20px; margin-bottom:10px;" /></p>
                             <p>
                                 <if condition="$admin['is_examine'] == 0">
-                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/AdminManage/examinePass', array('id'=>$admin['id']))}">通过审核</a>
-                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/AdminManage/examineRefuse', array('id'=>$admin['id']))}">拒绝审核</a>
+                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('Admin/AdminManage/examinePass', array('id'=>$admin['id']))}">通过审核</a>
+                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('Admin/AdminManage/examineRefuse', array('id'=>$admin['id']))}">拒绝审核</a>
                                     <elseif condition="$admin['is_examine'] == 1"/>
                                         <p class="text-success">审核已通过</p>
                                     <else />
@@ -188,9 +188,9 @@
                             </p>
                             <p>
                                 <if condition="$admin['is_block'] == 0">
-                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/AdminManage/blockAdmin', array('id'=>$admin['id']))}">屏蔽</a>
+                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('Admin/AdminManage/blockAdmin', array('id'=>$admin['id']))}">屏蔽</a>
                                 <else />
-                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/AdminManage/blockAdmin', array('id'=>$admin['id']))}">恢复</a>
+                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('Admin/AdminManage/blockAdmin', array('id'=>$admin['id']))}">恢复</a>
                                 </if>
                             </p>
                             <div class="col-md-6 col-md-offset-3" style="line-height: 28px;">

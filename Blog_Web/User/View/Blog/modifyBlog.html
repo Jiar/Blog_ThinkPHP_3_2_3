@@ -44,7 +44,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{:U('/User/Home/user', array('username'=>$_COOKIE['name']))}">{$Think.cookie.name}的个人主页</a></li>
+                <li><a href="{:U('User/Home/user', array('username'=>$_COOKIE['name']))}">{$Think.cookie.name}的个人主页</a></li>
                 <li><a href="">占位1</a></li>
                 <li><a href="">占位2</a></li>
                 <li><a href="">占位3</a></li>
@@ -54,14 +54,14 @@
                     <li class="dropdown">
                         <a style="padding: 10px;" href="" class="dropdown-toggle" data-toggle="dropdown"><img class="nav-user-photo" src="{$Think.cookie.avatar}" alt="{$Think.cookie.name}" style="width:30px;height:30px;border-radius: 50%;" /> <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{:U('/User/Home/user', array('username'=>$_COOKIE['name']))}">我的主页</a></li>
-                            <li><a href="{:U('/User/Blog/addBlog')}">添加博客</a></li>
+                            <li><a href="{:U('User/Home/user', array('username'=>$_COOKIE['name']))}">我的主页</a></li>
+                            <li><a href="{:U('User/Blog/addBlog')}">添加博客</a></li>
                             <li class="divider"></li>
-                            <li><a href="{:U('/User/User/signout')}">退出登录</a></li>
+                            <li><a href="{:U('User/User/signout')}">退出登录</a></li>
                         </ul>
                     </li>
                     <else />
-                    <li><a href="{:U('/User/User/login')}">登录</a></li>
+                    <li><a href="{:U('User/User/login')}">登录</a></li>
                 </if>
             </ul>
             <form class="navbar-form navbar-right" role="search">
@@ -80,7 +80,7 @@
         <h3>修改博客</h3>
         <br/>
 
-        <form class="form-horizontal" role="form" method="post" action="{:U('/User/Blog/modifyBlogForm')}">
+        <form class="form-horizontal" role="form" method="post" action="{:U('User/Blog/modifyBlogForm')}">
             <input type="hidden" name="user_id" value="{:$blog['user_id']}">
             <input type="hidden" name="blog_id" value="{:$blog['blog_id']}">
             <div class="form-group">

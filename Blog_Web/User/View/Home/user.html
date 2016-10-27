@@ -44,7 +44,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{:U('/User/Home/user', array('username'=>$_GET['username']))}">{$Think.get.username}的个人主页</a></li>
+                <li class="active"><a href="{:U('User/Home/user', array('username'=>$_GET['username']))}">{$Think.get.username}的个人主页</a></li>
                 <li><a href="">占位1</a></li>
                 <li><a href="">占位2</a></li>
                 <li><a href="">占位3</a></li>
@@ -54,14 +54,14 @@
                     <li class="dropdown">
                         <a style="padding: 10px;" href="" class="dropdown-toggle" data-toggle="dropdown"><img class="nav-user-photo" src="{$Think.cookie.avatar}" alt="{$Think.cookie.name}" style="width:30px;height:30px;border-radius: 50%;" /> <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{:U('/User/Home/user', array('username'=>$_COOKIE['name']))}">我的主页</a></li>
-                            <li><a href="{:U('/User/Blog/addBlog')}">添加博客</a></li>
+                            <li><a href="{:U('User/Home/user', array('username'=>$_COOKIE['name']))}">我的主页</a></li>
+                            <li><a href="{:U('User/Blog/addBlog')}">添加博客</a></li>
                             <li class="divider"></li>
-                            <li><a href="{:U('/User/User/signout')}">退出登录</a></li>
+                            <li><a href="{:U('User/User/signout')}">退出登录</a></li>
                         </ul>
                     </li>
                     <else />
-                    <li><a href="{:U('/User/User/login')}">登录</a></li>
+                    <li><a href="{:U('User/User/login')}">登录</a></li>
                 </if>
             </ul>
             <form class="navbar-form navbar-right" role="search">
@@ -78,7 +78,7 @@
 
     <div class="list-group">
         <volist name="blogs" id="blog">
-            <a href="{:U('/User/Blog/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}" class="list-group-item">
+            <a href="{:U('User/Blog/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}" class="list-group-item">
                 <h4 class="list-group-item-heading">{$blog['title']}</h4>
                 <h6>
                     <if condition="$blog['is_block'] == 1">

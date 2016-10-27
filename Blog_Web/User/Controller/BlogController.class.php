@@ -17,7 +17,7 @@ class BlogController extends Controller {
         if(session('?userId') && session('?userToken')) {
             $this->display('Blog/addBlog');
         } else {
-            redirect('/User/User/user');
+            redirect(U('User/user'));
         }
     }
 
@@ -37,7 +37,7 @@ class BlogController extends Controller {
             $this->error(structureErrorInfo($blog->getError()));
         } else {
             $blog->add();
-            redirect('/User/User/user');
+            redirect(U('User/user'));
         }
     }
 
@@ -59,7 +59,7 @@ class BlogController extends Controller {
             $this->assign('blog', $blog);
             $this->display('Blog/modifyBlog');
         } else {
-            redirect('/User/User/user');
+            redirect(U('User/user'));
         }
     }
 
@@ -71,7 +71,7 @@ class BlogController extends Controller {
         $data['content'] = I('post.content');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $blog->where($where)->save($data);
-        redirect('/User/User/user');
+        redirect(U('User/user'));
     }
 
     public function deleteBlogAction($userId, $blogId) {
@@ -85,7 +85,7 @@ class BlogController extends Controller {
             $data['blog_id'] = $blogId;
             $blog->where($data)->delete();
         }
-        redirect('/User/User/user');
+        redirect(U('User/user'));
     }
 
     public function detailBlogAction($user,$blogId) {

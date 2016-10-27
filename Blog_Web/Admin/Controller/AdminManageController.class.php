@@ -62,7 +62,7 @@ class AdminManageController extends BaseController {
         $admin = D('Admin');
         $data['is_examine'] = 1;
         $admin->where($where)->save($data);
-        redirect('/Admin/AdminManage/allAdmins');
+        redirect(U('AdminManage/allAdmins'));
     }
 
     /**
@@ -75,7 +75,7 @@ class AdminManageController extends BaseController {
         $admin = D('Admin');
         $data['is_examine'] = 2;
         $admin->where($where)->save($data);
-        redirect('/Admin/AdminManage/allAdmins');
+        redirect(U('AdminManage/allAdmins'));
     }
 
     /**
@@ -90,7 +90,7 @@ class AdminManageController extends BaseController {
         $data['is_block'] = $admin['is_block']==0?1:0;
         $admin = D('Admin');
         $admin->where($where)->save($data);
-        redirect('/Admin/AdminManage/allAdmins');
+        redirect(U('AdminManage/allAdmins'));
     }
 
 }

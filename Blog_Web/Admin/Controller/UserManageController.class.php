@@ -43,7 +43,7 @@ class UserManageController extends BaseController {
         $data['is_block'] = $user['is_block']==0?1:0;
         $user = D('User');
         $user->where($where)->save($data);
-        redirect('/Admin/UserManage/allUsers');
+        redirect('UserManage/allUsers');
     }
 
 }

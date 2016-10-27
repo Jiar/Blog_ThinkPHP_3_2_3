@@ -176,14 +176,14 @@
 
                         <div align="center">
                             <h3>{$blog['title']}</h3>
-                            <h5><a type="button" class="btn btn-default btn-xs" href="{:U('/Admin/UserManage/detailUser', array('id'=>$blog['user_id']))}">{$blog['user_name']}</a></h5>
+                            <h5><a type="button" class="btn btn-default btn-xs" href="{:U('Admin/UserManage/detailUser', array('id'=>$blog['user_id']))}">{$blog['user_name']}</a></h5>
                             <h5>浏览次数: {$blog['read_count']}</h5>
                             <h6>创建时间: {$blog['create_time']}</h6>
                             <p>
                                 <if condition="$blog['is_block'] == 0">
-                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">屏蔽</a>
+                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">屏蔽</a>
                                     <else />
-                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">恢复</a>
+                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">恢复</a>
                                 </if>
                             </p>
                             <p class="jumbotron">{$blog['content']}</p>

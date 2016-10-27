@@ -15,34 +15,34 @@ class AdminController extends Controller {
     // 进入主界面
     public function admin_action() {
         if(session('?adminId') && session('?adminToken')) {
-            $this->display('admin');
+            $this->display('Admin/admin');
         } else {
-            redirect('login');
+            redirect(U('Admin/login'));
         }
     }
 
     // 进入登录、注册界面
     public function login_action() {
         if(session('?adminId') && session('?adminToken')) {
-            redirect('admin');
+            redirect(U('Admin/admin'));
         } else {
-            $this->display('login');
+            $this->display('Admin/login');
         }
     }
 
     // 进入注册界面
     public function register_action() {
         if(session('?adminId') && session('?adminToken')) {
-            redirect('admin');
+            redirect(U('Admin/admin'));
         } else {
-            $this->display('register');
+            $this->display('Admin/register');
         }
     }
 
     // 登录操作
     public function signin_action() {
         if(session('?adminId') && session('?adminToken')) {
-            redirect('admin');
+            redirect(U('Admin/admin'));
         } else {
             $account = I('post.account');
             $password = sha1(I("post.password"));
@@ -115,7 +115,7 @@ class AdminController extends Controller {
             $this->error(structureErrorInfo($admin->getError()));
         } else {
             $admin->add();
-            redirect('login');
+            redirect(U('Admin/login'));
         }
     }
 
@@ -125,7 +125,7 @@ class AdminController extends Controller {
         session('[regenerate]');
         cookie('name',null);
         cookie('avatar',null);
-        redirect('login');
+        redirect(U('Admin/login'));
     }
 
     // 登录后保存session和cookie
@@ -142,7 +142,7 @@ class AdminController extends Controller {
             session('adminToken', $result['token']);
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
-            redirect('admin');
+            redirect(U('Admin/admin'));
         } else {
             $this->error('账户或密码错误');
         }

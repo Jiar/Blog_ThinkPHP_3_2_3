@@ -194,13 +194,13 @@
                                         <td>{$blog['title']}</td>
                                         <td>{$blog['read_count']}</td>
                                         <td>{$blog['create_time']}</td>
-                                        <td><a type="button" class="btn btn-default btn-xs" href="{:U('/Admin/UserManage/detailUser', array('id'=>$blog['user_id']))}">{$blog['user_name']}</a></td>
-                                        <td><a type="button" class="btn btn-default btn-xs" href="{:U('/Admin/BlogManage/detailBlog', array('id'=>$blog['id']))}">详情</a></td>
+                                        <td><a type="button" class="btn btn-default btn-xs" href="{:U('Admin/UserManage/detailUser', array('id'=>$blog['user_id']))}">{$blog['user_name']}</a></td>
+                                        <td><a type="button" class="btn btn-default btn-xs" href="{:U('Admin/BlogManage/detailBlog', array('id'=>$blog['id']))}">详情</a></td>
                                         <td>
                                             <if condition="$blog['blog_is_block'] == 0">
-                                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">屏蔽</a>
+                                                    <a type="button" class="btn btn-danger btn-xs" href="{:U('Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">屏蔽</a>
                                                 <else />
-                                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('/Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">恢复</a>
+                                                    <a type="button" class="btn btn-primary btn-xs" href="{:U('Admin/BlogManage/blockBlog', array('id'=>$blog['id']))}">恢复</a>
                                             </if>
                                         </td>
                                     </tr>

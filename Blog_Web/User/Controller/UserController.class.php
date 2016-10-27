@@ -15,16 +15,16 @@ class UserController extends Controller {
     // 进入主界面
     public function user_action() {
         if(session('?userId') && session('?userToken')) {
-            redirect('/User/Home/user/username/' .cookie('name') );
+            $this->redirect('Home/user', array('username'=>cookie('name')));
         } else {
-            redirect('login');
+            redirect(U('User/login'));
         }
     }
 
     // 进入登录界面
     public function login_action() {
         if(session('?userId') && session('?userToken')) {
-            redirect('user');
+            redirect(U('User/user'));
         } else {
             $this->display('User/login');
         }
@@ -33,7 +33,7 @@ class UserController extends Controller {
     // 进入注册界面
     public function register_action() {
         if(session('?userId') && session('?userToken')) {
-            redirect('user');
+            redirect(U('User/user'));
         } else {
             $this->display('User/register');
         }
@@ -42,7 +42,7 @@ class UserController extends Controller {
     // 登录操作
     public function signin_action() {
         if(session('?userId') && session('?userToken')) {
-            redirect('user');
+            redirect(U('User/user'));
         } else {
             $account = I('post.account');
             $password = sha1(I("post.password"));
@@ -102,7 +102,7 @@ class UserController extends Controller {
             session('userToken', $result['token']);
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
-            redirect('user');
+            redirect(U('User/user'));
         }
     }
 
@@ -113,7 +113,7 @@ class UserController extends Controller {
 //        cookie(null);
         cookie('name',null);
         cookie('avatar',null);
-        redirect('login');
+        redirect(U('User/login'));
     }
 
     // 登录后保存session和cookie
@@ -130,7 +130,7 @@ class UserController extends Controller {
             session('userToken', $result['token']);
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
-            redirect('user');
+            redirect(U('User/user'));
         } else {
             $this->error('账户或密码错误');
         }
