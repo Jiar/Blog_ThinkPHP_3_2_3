@@ -24,7 +24,7 @@ define('DIR_SECURE_FILENAME', 'refuse.html');
 define('DIR_SECURE_CONTENT', '目录禁止');
 
 $_GET['m'] = 'User';
-$_GET['c'] = 'Home';
+$_GET['c'] = 'User';
 $_GET['a'] = 'user';
 
 // 引入ThinkPHP入口文件
