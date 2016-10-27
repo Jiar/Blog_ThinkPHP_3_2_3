@@ -19,7 +19,7 @@ class AccountManageController extends BaseController {
      * @param $newPwd 新密码
      * @param $repPwd 重复新密码
      */
-    public function modifyPwdAction($oldPwd, $newPwd, $repPwd) {
+    public function modifyPwd_action($oldPwd, $newPwd, $repPwd) {
 
     }
 

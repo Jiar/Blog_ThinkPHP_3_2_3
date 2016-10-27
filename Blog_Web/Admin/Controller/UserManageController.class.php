@@ -13,7 +13,7 @@ class UserManageController extends BaseController {
     /**
      * 管理员查看所有用户
      */
-    public function allUsersAction() {
+    public function allUsers_action() {
         $users = D('User')->select();
         $this->assign('users', $users);
         $this->display('UserManage/allUsers');
@@ -24,7 +24,7 @@ class UserManageController extends BaseController {
      *
      * @param $id 用户id（主键）
      */
-    public function detailUserAction($id) {
+    public function detailUser_action($id) {
         $user = D('User');
         $user = $user->find($id);
         $this->assign('user', $user);
@@ -36,7 +36,7 @@ class UserManageController extends BaseController {
      *
      * @param $id 用户id（主键）
      */
-    public function blockUserAction($id) {
+    public function blockUser_action($id) {
         $user = D('User');
         $user = $user->find($id);
         $where['id'] = $id;

@@ -13,7 +13,7 @@ class AdminManageController extends BaseController {
     /**
      * 管理员查看所有管理员
      */
-    public function allAdminsAction() {
+    public function allAdmins_action() {
         $admins = D('Admin')->select();
         $this->assign('admins', $admins);
         $this->display('AdminManage/allAdmins');
@@ -22,21 +22,21 @@ class AdminManageController extends BaseController {
     /**
      * 管理员添加其他管理员
      */
-    public function addAdminAction() {
+    public function addAdmin_action() {
 
     }
 
     /**
      * 管理员修改其他管理员
      */
-    public function modifyAdminAction() {
+    public function modifyAdmin_action() {
 
     }
 
     /**
      * 管理员删除其他管理员
      */
-    public function deleteAdminAction() {
+    public function deleteAdmin_action() {
 
     }
 
@@ -45,7 +45,7 @@ class AdminManageController extends BaseController {
      *
      * @param $id 其他管理员id（主键）
      */
-    public function detailAdminAction($id) {
+    public function detailAdmin_action($id) {
         $admin = D('Admin');
         $admin = $admin->find($id);
         $this->assign('admin', $admin);
@@ -57,7 +57,7 @@ class AdminManageController extends BaseController {
      *
      * @param $id 其他管理员id（主键）
      */
-    public function examinePassAction($id) {
+    public function examinePass_action($id) {
         $where['id'] = $id;
         $admin = D('Admin');
         $data['is_examine'] = 1;
@@ -70,7 +70,7 @@ class AdminManageController extends BaseController {
      *
      * @param $id 其他管理员id（主键）
      */
-    public function examineRefuseAction($id) {
+    public function examineRefuse_action($id) {
         $where['id'] = $id;
         $admin = D('Admin');
         $data['is_examine'] = 2;
@@ -83,7 +83,7 @@ class AdminManageController extends BaseController {
      *
      * @param $id 其他管理员id（主键）
      */
-    public function blockAdminAction($id) {
+    public function blockAdmin_action($id) {
         $admin = D('Admin');
         $admin = $admin->find($id);
         $where['id'] = $id;

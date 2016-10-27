@@ -22,6 +22,6 @@
 	<body>
     <div class="container">
         <div class="header clearfix">
-            <h3 class="text-muted">Palcomm Qwechat&Project install</h3>
+            <h3 class="text-muted">Blog install</h3>
         </div>
         <div class="row marketing">

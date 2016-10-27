@@ -13,7 +13,7 @@ use Think\Controller;
 
 class BlogController extends Controller {
 
-    public function addBlogAction() {
+    public function addBlog_action() {
         if(session('?userId') && session('?userToken')) {
             $this->display('Blog/addBlog');
         } else {
@@ -21,7 +21,7 @@ class BlogController extends Controller {
         }
     }
 
-    public function addBlogFormAction() {
+    public function addBlogForm_action() {
         $blog = D('Blog');
         $data['user_id'] = session('userId');
         $blog = $blog->where($data)->order('blog_id desc')->select();
@@ -41,7 +41,7 @@ class BlogController extends Controller {
         }
     }
 
-    public function modifyBlogAction($userId, $blogId) {
+    public function modifyBlog_action($userId, $blogId) {
         if(session('?userId') != $userId) {
             $this->error('无法修改别人的博客');
             return;
@@ -63,7 +63,7 @@ class BlogController extends Controller {
         }
     }
 
-    public function modifyBlogFormAction() {
+    public function modifyBlogForm_action() {
         $blog = D('Blog');
         $where['user_id'] = I('post.user_id');
         $where['blog_id'] = I('post.blog_id');

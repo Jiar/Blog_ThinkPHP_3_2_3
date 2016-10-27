@@ -21,7 +21,7 @@ class BaseController extends Controller {
         }
     }
 
-    public function indexAction() {
+    public function index_action() {
         echo 'index';
     }
 

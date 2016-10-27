@@ -16,7 +16,7 @@ class PermisManageController extends BaseController {
      * @param $type 账户类型 1:管理员
      * @param $id   账户Id
      */
-    public function permissionAction($type, $id) {
+    public function permission_action($type, $id) {
         if($type == 1) {
             $admin = D('Admin');
             $admin = $admin->find($id);
@@ -29,28 +29,28 @@ class PermisManageController extends BaseController {
     /**
      * 管理员查看所有权限
      */
-    public function allPermissionsAction() {
+    public function allPermissions_action() {
 
     }
 
     /**
      * 管理员添加权限
      */
-    public function addPermissionAction() {
+    public function addPermission_action() {
 
     }
 
     /**
      * 管理员修改权限
      */
-    public function modifyPermissionAction() {
+    public function modifyPermission_action() {
 
     }
 
     /**
      * 管理员删除权限
      */
-    public function deletePermissionAction() {
+    public function deletePermission_action() {
 
     }
 

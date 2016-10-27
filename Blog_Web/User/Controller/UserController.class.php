@@ -13,7 +13,7 @@ use Think\Controller;
 class UserController extends Controller {
 
     // 进入主界面
-    public function userAction() {
+    public function user_action() {
         if(session('?userId') && session('?userToken')) {
             redirect('/User/Home/user/username/' .cookie('name') );
         } else {
@@ -22,7 +22,7 @@ class UserController extends Controller {
     }
 
     // 进入登录界面
-    public function loginAction() {
+    public function login_action() {
         if(session('?userId') && session('?userToken')) {
             redirect('user');
         } else {
@@ -31,7 +31,7 @@ class UserController extends Controller {
     }
 
     // 进入注册界面
-    public function registerAction() {
+    public function register_action() {
         if(session('?userId') && session('?userToken')) {
             redirect('user');
         } else {
@@ -40,7 +40,7 @@ class UserController extends Controller {
     }
 
     // 登录操作
-    public function signinAction() {
+    public function signin_action() {
         if(session('?userId') && session('?userToken')) {
             redirect('user');
         } else {
@@ -81,7 +81,7 @@ class UserController extends Controller {
     }
 
     // 注册操作
-    public function signupAction() {
+    public function signup_action() {
         $user = D('User');
         $name = I('post.name');
         $data['name'] = $name;
@@ -107,7 +107,7 @@ class UserController extends Controller {
     }
 
     // 退出操作
-    public function signoutAction() {
+    public function signout_action() {
         session('[destroy]');
         session('[regenerate]');
 //        cookie(null);

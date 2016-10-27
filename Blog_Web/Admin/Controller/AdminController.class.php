@@ -13,7 +13,7 @@ use Think\Controller;
 class AdminController extends Controller {
 
     // 进入主界面
-    public function adminAction() {
+    public function admin_action() {
         if(session('?adminId') && session('?adminToken')) {
             $this->display('admin');
         } else {
@@ -22,7 +22,7 @@ class AdminController extends Controller {
     }
 
     // 进入登录、注册界面
-    public function loginAction() {
+    public function login_action() {
         if(session('?adminId') && session('?adminToken')) {
             redirect('admin');
         } else {
@@ -31,7 +31,7 @@ class AdminController extends Controller {
     }
 
     // 进入注册界面
-    public function registerAction() {
+    public function register_action() {
         if(session('?adminId') && session('?adminToken')) {
             redirect('admin');
         } else {
@@ -40,7 +40,7 @@ class AdminController extends Controller {
     }
 
     // 登录操作
-    public function signinAction() {
+    public function signin_action() {
         if(session('?adminId') && session('?adminToken')) {
             redirect('admin');
         } else {
@@ -95,7 +95,7 @@ class AdminController extends Controller {
     }
 
     // 注册操作
-    public function signupAction() {
+    public function signup_action() {
         $name = I('post.name');
         $data['name'] = $name;
         $data['password'] = I('post.password');
@@ -120,7 +120,7 @@ class AdminController extends Controller {
     }
 
     // 退出操作
-    public function signoutAction() {
+    public function signout_action() {
         session('[destroy]');
         session('[regenerate]');
         cookie('name',null);

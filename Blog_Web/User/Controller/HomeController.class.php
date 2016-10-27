@@ -12,11 +12,11 @@ use Think\Controller;
 
 class HomeController extends Controller {
 
-    public function homeAction() {
+    public function home_action() {
         $this->display('Home/home');
     }
 
-    public function userAction($username) {
+    public function user_action($username) {
         $user = D("User");
         $result = $user->getByName($username);
         if(count($result) == 0) {
