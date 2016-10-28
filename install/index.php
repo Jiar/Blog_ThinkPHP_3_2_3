@@ -8,15 +8,8 @@ define('KOL_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
 include_once('header.php');
 $step = $_GET['step'];
 if($step == 4)  {
-	$status = 1;
-	echo 'KOL_ROOT : ' .KOL_ROOT;
-	echo '<br/><br/>';
 
-	// step 1
-	$result = exec('cd '.KOL_ROOT,$output,$status);
-
-	echo '<h5>step 1</h5>';
-	echo '<br/>';
+	$result = exec('cd .. ' .' && /bin/bash Blog_init.bash' ,$output,$status);
 
 	echo '$result : ';
 	var_dump($result);
@@ -30,70 +23,93 @@ if($step == 4)  {
 	var_dump($output);
 	echo '<br/><br/>';
 
-	// step 2
-	$result = exec('/usr/bin/git fetch --all',$output,$status);
-//	$result = exec('sudo -u root -S /usr/bin/git fetch --all < ~/.sudopass/sudopass.secret',$output,$status);
+//	$status = 1;
+//	echo 'KOL_ROOT : ' .KOL_ROOT;
+//	echo '<br/><br/>';
+//	// step 1
+//	$result = exec('cd '.KOL_ROOT,$output,$status);
+//
+//	echo '<h5>step 1</h5>';
+//	echo '<br/>';
+//
+//	echo '$result : ';
+//	var_dump($result);
+//	echo '<br/><br/>';
+//
+//	echo '$status : ';
+//	var_dump($status);
+//	echo '<br/><br/>';
+//
+//	echo '$output : ';
+//	var_dump($output);
+//	echo '<br/><br/>';
+//
+//	// step 2
+//	$result = exec('/usr/bin/git fetch --all',$output,$status);
+////	$result = exec('sudo -u root -S /usr/bin/git fetch --all < ~/.sudopass/sudopass.secret',$output,$status);
+//
+//	echo '<h5>step 2</h5>';
+//	echo '><br/>';
+//
+//	echo '$result : ';
+//	var_dump($result);
+//	echo '<br/><br/>';
+//
+//	echo '$status : ';
+//	var_dump($status);
+//	echo '<br/><br/>';
+//
+//	echo '$output : ';
+//	var_dump($output);
+//	echo '<br/><br/>';
+//
+//	// step 3
+//	$result = exec('/usr/bin/git reset --hard origin/develop',$output,$status);
+////	$result = exec('sudo -u root -S /usr/bin/git reset --hard origin/develop < ~/.sudopass/sudopass.secret',$output,$status);
+//
+//	echo '<h5>step 3</h5>';
+//	echo '><br/>';
+//
+//	echo '$result : ';
+//	var_dump($result);
+//	echo '<br/><br/>';
+//
+//	echo '$status : ';
+//	var_dump($status);
+//	echo '<br/><br/>';
+//
+//	echo '$output : ';
+//	var_dump($output);
+//	echo '<br/><br/>';
+//
+//	// step 4
+//	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
+////	$result = exec('sudo -u root -S rm -r Blog_Web/Runtime < ~/.sudopass/sudopass.secret',$output,$status);
+//
+//	echo '<h5>step 4</h5>';
+//	echo '<br/>';
+//
+//	echo '$result : ';
+//	var_dump($result);
+//	echo '<br/><br/>';
+//
+//	echo '$status : ';
+//	var_dump($status);
+//	echo '<br/><br/>';
+//
+//	echo '$output : ';
+//	var_dump($output);
+//	echo '<br/><br/>';
+//
+//	if ($status == 0){
+//	     echo '<script type="text/javascript"> alert("发布成功") </script>';
+////	    echo
+////	    '<script language="JavaScript" type="text/javascript">
+////           window.location.href="/mywork/qwechat";
+////    	</script>';
+//	}
 
-	echo '<h5>step 2</h5>';
-	echo '><br/>';
 
-	echo '$result : ';
-	var_dump($result);
-	echo '<br/><br/>';
-
-	echo '$status : ';
-	var_dump($status);
-	echo '<br/><br/>';
-
-	echo '$output : ';
-	var_dump($output);
-	echo '<br/><br/>';
-
-	// step 3
-	$result = exec('/usr/bin/git reset --hard origin/develop',$output,$status);
-//	$result = exec('sudo -u root -S /usr/bin/git reset --hard origin/develop < ~/.sudopass/sudopass.secret',$output,$status);
-
-	echo '<h5>step 3</h5>';
-	echo '><br/>';
-
-	echo '$result : ';
-	var_dump($result);
-	echo '<br/><br/>';
-
-	echo '$status : ';
-	var_dump($status);
-	echo '<br/><br/>';
-
-	echo '$output : ';
-	var_dump($output);
-	echo '<br/><br/>';
-
-	// step 4
-	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
-//	$result = exec('sudo -u root -S rm -r Blog_Web/Runtime < ~/.sudopass/sudopass.secret',$output,$status);
-
-	echo '<h5>step 4</h5>';
-	echo '<br/>';
-
-	echo '$result : ';
-	var_dump($result);
-	echo '<br/><br/>';
-
-	echo '$status : ';
-	var_dump($status);
-	echo '<br/><br/>';
-
-	echo '$output : ';
-	var_dump($output);
-	echo '<br/><br/>';
-
-	if ($status == 0){
-	     echo '<script type="text/javascript"> alert("发布成功") </script>';
-//	    echo
-//	    '<script language="JavaScript" type="text/javascript">
-//           window.location.href="/mywork/qwechat";
-//    	</script>';
-	}
 // 	Header("Location: index.php");
 }
 
