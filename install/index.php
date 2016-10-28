@@ -27,10 +27,10 @@ if($step == 'ok')  {
 		echo '<script type="text/javascript"> alert("发布成功") </script>';
 	    echo
 	    '<script language="JavaScript" type="text/javascript">
-           window.location.href="/Blog/index.php";
+           window.setTimeout("window.location=' .'"\'/Blog/index.php\'"' .',3000); 
     	</script>';
 	} else {
-		echo '<script type="text/javascript"> alert("发布失败或已是最新") </script>';
+		echo '<script type="text/javascript"> alert("发布失败") </script>';
 	}
 
 //	$status = 1;
@@ -115,7 +115,7 @@ if($step == 'ok')  {
 //	     echo '<script type="text/javascript"> alert("发布成功") </script>';
 ////	    echo
 ////	    '<script language="JavaScript" type="text/javascript">
-////           window.location.href="/mywork/qwechat";
+////           window.location.href="/Blog/index.php";
 ////    	</script>';
 //	}
 // 	Header("Location: index.php");
