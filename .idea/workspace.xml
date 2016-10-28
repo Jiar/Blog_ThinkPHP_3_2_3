@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
@@ -39,12 +40,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="78">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
               <folding>
-                <marker date="1477633122000" expanded="true" signature="2750:2933" ph="..." />
-                <marker date="1477633122000" expanded="true" signature="2798:2925" ph="..." />
-                <marker date="1477633122000" expanded="true" signature="2827:2916" ph="..." />
+                <marker date="1477633484000" expanded="true" signature="2752:2935" ph="..." />
+                <marker date="1477633484000" expanded="true" signature="2800:2927" ph="..." />
+                <marker date="1477633484000" expanded="true" signature="2829:2918" ph="..." />
               </folding>
             </state>
           </provider>
@@ -53,8 +54,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -476,14 +477,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="29342000" />
-    </task>
-    <task id="LOCAL-00005" summary="remove .phpstorm.meta.php">
-      <created>1475051345992</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1475051345992</updated>
+      <workItem from="1476930056695" duration="29502000" />
     </task>
     <task id="LOCAL-00006" summary="Modify README.md">
       <created>1475051586575</created>
@@ -821,11 +815,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477633186854</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="just for test instll">
+      <created>1477633233099</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1477633233099</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254256000" />
+    <option name="totallyTimeSpent" value="254416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,9 +915,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="just for test instll" />
     <MESSAGE value="modify install file" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
+    <MESSAGE value="just for test instll" />
+    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1328,20 +1329,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="78">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
-            <marker date="1477633122000" expanded="true" signature="2750:2933" ph="..." />
-            <marker date="1477633122000" expanded="true" signature="2798:2925" ph="..." />
-            <marker date="1477633122000" expanded="true" signature="2827:2916" ph="..." />
+            <marker date="1477633484000" expanded="true" signature="2752:2935" ph="..." />
+            <marker date="1477633484000" expanded="true" signature="2800:2927" ph="..." />
+            <marker date="1477633484000" expanded="true" signature="2829:2918" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
