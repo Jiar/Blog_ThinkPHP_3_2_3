@@ -26,8 +26,8 @@ if($step == 'ok')  {
 	if ($status == 0){
 		echo '<script type="text/javascript"> alert("发布成功") </script>';
 	    echo
-	    '<script language="JavaScript" type="text/javascript">
-           window.setTimeout("window.location=' .''/Blog/index.php'"' .',3000);
+	    "<script language='JavaScript' type='text/javascript'>
+           window.setTimeout(\"window.location=" ."'/Blog/index.php'\"" .',3000);
     	</script>';
 	} else {
 		echo '<script type="text/javascript"> alert("发布失败") </script>';

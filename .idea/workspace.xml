@@ -20,7 +20,7 @@
     <pharPath>/usr/local/bin/composer</pharPath>
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="GROUP_SCHEMA" value="true" />
@@ -40,15 +40,17 @@
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding>
-                <marker date="1477644653000" expanded="true" signature="633:635" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="633:681" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="633:700" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="633:728" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="3029:3213" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="3078:3205" ph="..." />
-                <marker date="1477644653000" expanded="true" signature="3107:3196" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:635" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:663" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:682" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:701" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:702" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="633:730" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="3031:3215" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="3080:3207" ph="..." />
+                <marker date="1477644892000" expanded="true" signature="3109:3198" ph="..." />
               </folding>
             </state>
           </provider>
@@ -509,14 +511,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="33854000" />
-    </task>
-    <task id="LOCAL-00020" summary="添加安装文件">
-      <created>1477577357729</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1477577357729</updated>
+      <workItem from="1476930056695" duration="34092000" />
     </task>
     <task id="LOCAL-00021" summary="添加安装文件">
       <created>1477577782773</created>
@@ -854,11 +849,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477644548236</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="modify install file">
+      <created>1477644671250</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1477644671250</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258768000" />
+    <option name="totallyTimeSpent" value="259006000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1370,15 +1372,17 @@
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding>
-            <marker date="1477644653000" expanded="true" signature="633:635" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="633:681" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="633:700" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="633:728" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="3029:3213" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="3078:3205" ph="..." />
-            <marker date="1477644653000" expanded="true" signature="3107:3196" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:635" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:663" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:682" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:701" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:702" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="633:730" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="3031:3215" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="3080:3207" ph="..." />
+            <marker date="1477644892000" expanded="true" signature="3109:3198" ph="..." />
           </folding>
         </state>
       </provider>
