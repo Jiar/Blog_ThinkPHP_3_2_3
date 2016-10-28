@@ -7,20 +7,19 @@ define('KOL_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
 
 include_once('header.php');
 $step = $_GET['step'];
-if($step == 3)
-{
+if($step == 3)  {
 	$status = 1;
-//	exec(KOL_ROOT."init &",$output,$status);
-	exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/develop' .' && rm -r Blog_Web/Runtime',$output,$status);
+	$result = exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/develop' .' && rm -r Blog_Web/Runtime',$output,$status);
 	if ($status == 0){
 	     echo '<script type="text/javascript"> alert("发布成功") </script>';
 //	    echo
 //	    '<script language="JavaScript" type="text/javascript">
 //           window.location.href="/mywork/qwechat";
 //    	</script>';
-	} else {
-		echo '<script type="text/javascript"> alert(' .$output .') </script>';
 	}
+	echo '$result : ' .$result .'<br/><br/>';
+	echo '$status : ' .$status .'<br/><br/>';
+	echo '$output : ' .$output .'<br/><br/>';
 // 	Header("Location: index.php");
 }
 
