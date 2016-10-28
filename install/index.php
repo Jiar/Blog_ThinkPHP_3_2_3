@@ -9,15 +9,10 @@ include_once('header.php');
 $step = $_GET['step'];
 if($step == 4)  {
 	$status = 1;
-	$output = '';
-	$status = '';
 	echo 'KOL_ROOT : ' .KOL_ROOT;
 	echo '<br/><br/>';
 
 	// step 1
-	$status = 1;
-	$output = '';
-	$status = '';
 	$result = exec('cd '.KOL_ROOT,$output,$status);
 
 	echo 'step 1';
@@ -36,9 +31,6 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 2
-	$status = 1;
-	$output = '';
-	$status = '';
 //	$result = exec('/usr/bin/git fetch --all',$output,$status);
 	$result = exec('sudo -u root -S {{ /usr/bin/git fetch --all }} < ~/.sudopass/sudopass.secret',$output,$status);
 
@@ -58,9 +50,6 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 3
-	$status = 1;
-	$output = '';
-	$status = '';
 //	$result = exec('/usr/bin/git reset --hard origin/develop',$output,$status);
 	$result = exec('sudo -u root -S {{ /usr/bin/git reset --hard origin/develop }} < ~/.sudopass/sudopass.secret',$output,$status);
 
@@ -80,9 +69,6 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 4
-	$status = 1;
-	$output = '';
-	$status = '';
 //	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
 	$result = exec('sudo -u root -S {{ rm -r Blog_Web/Runtime }} < ~/.sudopass/sudopass.secret',$output,$status);
 

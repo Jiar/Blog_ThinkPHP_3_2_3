@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
@@ -39,12 +40,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+            <state relative-caret-position="-12">
+              <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
               <folding>
-                <marker date="1477625307000" expanded="true" signature="2523:2706" ph="..." />
-                <marker date="1477625307000" expanded="true" signature="2571:2698" ph="..." />
-                <marker date="1477625307000" expanded="true" signature="2600:2689" ph="..." />
+                <marker date="1477625696000" expanded="true" signature="2317:2500" ph="..." />
+                <marker date="1477625696000" expanded="true" signature="2365:2492" ph="..." />
+                <marker date="1477625696000" expanded="true" signature="2394:2483" ph="..." />
               </folding>
             </state>
           </provider>
@@ -54,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,7 +477,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="26658000" />
+      <workItem from="1476930056695" duration="26895000" />
     </task>
     <task id="LOCAL-00001" summary="开始学习PHP后台开发,听说入门用ThinkPHP3.2.3比较好。&#10;创建了这个项目,每天提交一些,记录第一次用PHP搭建博客系统的过程。">
       <created>1475043354008</created>
@@ -765,11 +766,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477625326067</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="just for test instll">
+      <created>1477625422609</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1477625422610</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251572000" />
+    <option name="totallyTimeSpent" value="251809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,9 +866,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="just for test instll" />
     <MESSAGE value="modify install file" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
+    <MESSAGE value="just for test instll" />
+    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1272,12 +1280,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        <state relative-caret-position="-12">
+          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
-            <marker date="1477625307000" expanded="true" signature="2523:2706" ph="..." />
-            <marker date="1477625307000" expanded="true" signature="2571:2698" ph="..." />
-            <marker date="1477625307000" expanded="true" signature="2600:2689" ph="..." />
+            <marker date="1477625696000" expanded="true" signature="2317:2500" ph="..." />
+            <marker date="1477625696000" expanded="true" signature="2365:2492" ph="..." />
+            <marker date="1477625696000" expanded="true" signature="2394:2483" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1285,7 +1293,7 @@
     <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
