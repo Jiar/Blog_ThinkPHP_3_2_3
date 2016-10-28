@@ -6,6 +6,8 @@
  * Time: 下午7:09
  */
 
+define('WEB_ROOT', substr(dirname(__FILE__), 0, -strlen('Blog_Web/Common/Common')));
+
 /**
  * 判断一个PHP数组是关联数组还是数字数组
  *
