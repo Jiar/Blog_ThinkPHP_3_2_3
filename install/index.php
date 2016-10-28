@@ -15,7 +15,7 @@ if($step == 4)  {
 	// step 1
 	$result = exec('cd '.KOL_ROOT,$output,$status);
 
-	echo 'step 1';
+	echo '<h5>step 1</h5>';
 	echo '<br/><br/>';
 
 	echo '$result : ';
@@ -35,7 +35,7 @@ if($step == 4)  {
 //	$result = exec('sudo -u root -S {{ /usr/bin/git fetch --all }} < ~/.sudopass/sudopass.secret',$output,$status);
 	$result = exec('sudo /usr/bin/git fetch --all',$output,$status);
 
-	echo 'step 2';
+	echo '<h5>step 2</h5>';
 	echo '<br/><br/>';
 
 	echo '$result : ';
@@ -55,7 +55,7 @@ if($step == 4)  {
 //	$result = exec('sudo -u root -S {{ /usr/bin/git reset --hard origin/develop }} < ~/.sudopass/sudopass.secret',$output,$status);
 	$result = exec('sudo /usr/bin/git reset --hard origin/develop',$output,$status);
 
-	echo 'step 3';
+	echo '<h5>step 3</h5>';
 	echo '<br/><br/>';
 
 	echo '$result : ';
@@ -75,7 +75,7 @@ if($step == 4)  {
 //	$result = exec('sudo -u root -S {{ rm -r Blog_Web/Runtime }} < ~/.sudopass/sudopass.secret',$output,$status);
 	$result = exec('sudo rm -r Blog_Web/Runtime',$output,$status);
 
-	echo 'step 4';
+	echo '<h5>step 4</h5>';
 	echo '<br/><br/>';
 
 	echo '$result : ';

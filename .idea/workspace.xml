@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="modify install file">
+    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +39,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+            <state relative-caret-position="165">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
               <folding>
-                <marker date="1477626167000" expanded="true" signature="2535:2718" ph="..." />
-                <marker date="1477626167000" expanded="true" signature="2583:2710" ph="..." />
-                <marker date="1477626167000" expanded="true" signature="2612:2701" ph="..." />
+                <marker date="1477626263000" expanded="true" signature="2571:2754" ph="..." />
+                <marker date="1477626263000" expanded="true" signature="2619:2746" ph="..." />
+                <marker date="1477626263000" expanded="true" signature="2648:2737" ph="..." />
               </folding>
             </state>
           </provider>
@@ -477,7 +476,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="27153000" />
+      <workItem from="1476930056695" duration="27242000" />
     </task>
     <task id="LOCAL-00001" summary="开始学习PHP后台开发,听说入门用ThinkPHP3.2.3比较好。&#10;创建了这个项目,每天提交一些,记录第一次用PHP搭建博客系统的过程。">
       <created>1475043354008</created>
@@ -780,11 +779,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477625724218</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="modify install file">
+      <created>1477626180850</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1477626180850</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252067000" />
+    <option name="totallyTimeSpent" value="252156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1295,12 +1301,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        <state relative-caret-position="165">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
           <folding>
-            <marker date="1477626167000" expanded="true" signature="2535:2718" ph="..." />
-            <marker date="1477626167000" expanded="true" signature="2583:2710" ph="..." />
-            <marker date="1477626167000" expanded="true" signature="2612:2701" ph="..." />
+            <marker date="1477626263000" expanded="true" signature="2571:2754" ph="..." />
+            <marker date="1477626263000" expanded="true" signature="2619:2746" ph="..." />
+            <marker date="1477626263000" expanded="true" signature="2648:2737" ph="..." />
           </folding>
         </state>
       </provider>
