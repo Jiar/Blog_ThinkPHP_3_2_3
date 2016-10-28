@@ -18,6 +18,8 @@ if($step == 3)
 //	    '<script language="JavaScript" type="text/javascript">
 //           window.location.href="/mywork/qwechat";
 //    	</script>';
+	} else {
+		echo '<script type="text/javascript"> alert(' .$output .') </script>';
 	}
 // 	Header("Location: index.php");
 }
