@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
@@ -39,12 +40,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" column="5" selection-start-line="25" selection-start-column="14" selection-end-line="109" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="127" column="37" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="37" />
               <folding>
-                <marker date="1477640647000" expanded="true" signature="2751:2934" ph="..." />
-                <marker date="1477640647000" expanded="true" signature="2799:2926" ph="..." />
-                <marker date="1477640647000" expanded="true" signature="2828:2917" ph="..." />
+                <marker date="1477641697000" expanded="true" signature="649:715" ph="..." />
+                <marker date="1477641697000" expanded="true" signature="2941:3125" ph="..." />
+                <marker date="1477641697000" expanded="true" signature="2990:3117" ph="..." />
+                <marker date="1477641697000" expanded="true" signature="3019:3108" ph="..." />
               </folding>
             </state>
           </provider>
@@ -476,14 +478,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="30945000" />
-    </task>
-    <task id="LOCAL-00012" summary="完善用户 添加、修改、删除 博客。">
-      <created>1476111515787</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1476111515787</updated>
+      <workItem from="1476930056695" duration="31578000" />
     </task>
     <task id="LOCAL-00013" summary="完善用户 添加、修改、删除 博客。">
       <created>1476111577619</created>
@@ -821,11 +816,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477640752702</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="just for test instll">
+      <created>1477640814045</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1477640814045</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255859000" />
+    <option name="totallyTimeSpent" value="256492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,9 +916,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="just for test instll" />
     <MESSAGE value="modify install file" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
+    <MESSAGE value="just for test instll" />
+    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1328,12 +1330,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="5" selection-start-line="25" selection-start-column="14" selection-end-line="109" selection-end-column="5" />
+        <state relative-caret-position="273">
+          <caret line="127" column="37" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="37" />
           <folding>
-            <marker date="1477640647000" expanded="true" signature="2751:2934" ph="..." />
-            <marker date="1477640647000" expanded="true" signature="2799:2926" ph="..." />
-            <marker date="1477640647000" expanded="true" signature="2828:2917" ph="..." />
+            <marker date="1477641697000" expanded="true" signature="649:715" ph="..." />
+            <marker date="1477641697000" expanded="true" signature="2941:3125" ph="..." />
+            <marker date="1477641697000" expanded="true" signature="2990:3117" ph="..." />
+            <marker date="1477641697000" expanded="true" signature="3019:3108" ph="..." />
           </folding>
         </state>
       </provider>

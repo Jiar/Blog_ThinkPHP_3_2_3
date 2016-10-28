@@ -2,14 +2,14 @@
 error_reporting(0);
 set_time_limit(600);
 
-//define('KOL_ROOT', str_replace('\\', '/', substr(dirname(__FILE__), 0, -7)));
-define('KOL_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
-
 include_once('header.php');
-$step = $_GET['step'];
-if($step == 4)  {
 
-	$result = exec('/bin/bash /var/www/youths/Blog_init.bash' ,$output,$status);
+define('PROJECT_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
+$step = $_GET['step'];
+if($step == 'ok')  {
+	$status = 1;
+	exec('cd '.PROJECT_ROOT .' && cd ..');
+	$result = exec('/bin/bash Blog_init.bash' ,$output,$status);
 
 	echo '$result : ';
 	var_dump($result);
@@ -22,6 +22,14 @@ if($step == 4)  {
 	echo '$output : ';
 	var_dump($output);
 	echo '<br/><br/>';
+
+	if ($status == 0){
+		echo '<script type="text/javascript"> alert("发布成功") </script>';
+	    echo
+	    '<script language="JavaScript" type="text/javascript">
+           window.location.href="/Blog/index.php";
+    	</script>';
+	}
 
 //	$status = 1;
 //	echo 'KOL_ROOT : ' .KOL_ROOT;
@@ -109,17 +117,15 @@ if($step == 4)  {
 ////    	</script>';
 //	}
 
-
 // 	Header("Location: index.php");
 }
 
 header('Content-Type: text/html; charset=utf-8');
 $PHP_SELF = addslashes(htmlspecialchars($_SERVER['PHP_SELF'] ? $_SERVER['PHP_SELF'] : $_SERVER['SCRIPT_NAME']));
-
 ?>
 
 <body>
-	<form method="post" action="index.php?step=4">
+	<form method="post" action="index.php?step=ok">
 		<div class="form-actions">
 			<button type="submit" class="pull-right btn btn-primary">一键发布（测试环境）</button>
 		</div>
