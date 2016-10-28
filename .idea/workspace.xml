@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
+    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="modify install file">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
@@ -37,25 +37,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
+            <state relative-caret-position="183">
+              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
               <folding>
-                <marker date="1477625696000" expanded="true" signature="2317:2500" ph="..." />
-                <marker date="1477625696000" expanded="true" signature="2365:2492" ph="..." />
-                <marker date="1477625696000" expanded="true" signature="2394:2483" ph="..." />
+                <marker date="1477626167000" expanded="true" signature="2535:2718" ph="..." />
+                <marker date="1477626167000" expanded="true" signature="2583:2710" ph="..." />
+                <marker date="1477626167000" expanded="true" signature="2612:2701" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -218,8 +218,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Common/Common/function.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/install/index.php" />
         <option value="$PROJECT_DIR$/test/test.html" />
+        <option value="$PROJECT_DIR$/install/index.php" />
       </list>
     </option>
   </component>
@@ -477,7 +477,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="26895000" />
+      <workItem from="1476930056695" duration="27153000" />
     </task>
     <task id="LOCAL-00001" summary="开始学习PHP后台开发,听说入门用ThinkPHP3.2.3比较好。&#10;创建了这个项目,每天提交一些,记录第一次用PHP搭建博客系统的过程。">
       <created>1475043354008</created>
@@ -773,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477625422610</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="modify install file">
+      <created>1477625724218</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1477625724218</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251809000" />
+    <option name="totallyTimeSpent" value="252067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,9 +873,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="modify install file" />
     <MESSAGE value="just for test instll" />
-    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
+    <MESSAGE value="modify install file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1278,23 +1285,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install/index.php">
+    <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
-          <folding>
-            <marker date="1477625696000" expanded="true" signature="2317:2500" ph="..." />
-            <marker date="1477625696000" expanded="true" signature="2365:2492" ph="..." />
-            <marker date="1477625696000" expanded="true" signature="2394:2483" ph="..." />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.html">
+    <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="183">
+          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+          <folding>
+            <marker date="1477626167000" expanded="true" signature="2535:2718" ph="..." />
+            <marker date="1477626167000" expanded="true" signature="2583:2710" ph="..." />
+            <marker date="1477626167000" expanded="true" signature="2612:2701" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
