@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,15 +38,14 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="117" column="54" selection-start-line="117" selection-start-column="54" selection-end-line="117" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
-                <marker date="1477643926000" expanded="true" signature="633:680" ph="..." />
-                <marker date="1477643926000" expanded="true" signature="633:703" ph="..." />
-                <marker date="1477643926000" expanded="true" signature="633:732" ph="..." />
-                <marker date="1477643926000" expanded="true" signature="3033:3217" ph="..." />
-                <marker date="1477643926000" expanded="true" signature="3082:3209" ph="..." />
-                <marker date="1477643926000" expanded="true" signature="3111:3200" ph="..." />
+                <marker date="1477644415000" expanded="true" signature="633:635" ph="..." />
+                <marker date="1477644415000" expanded="true" signature="633:727" ph="..." />
+                <marker date="1477644415000" expanded="true" signature="3028:3212" ph="..." />
+                <marker date="1477644415000" expanded="true" signature="3077:3204" ph="..." />
+                <marker date="1477644415000" expanded="true" signature="3106:3195" ph="..." />
               </folding>
             </state>
           </provider>
@@ -509,21 +506,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="33221000" />
-    </task>
-    <task id="LOCAL-00017" summary="添加管理员RBAC操作（还有BUG，白天再优化，晚安自己）">
-      <created>1476643452811</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1476643452811</updated>
-    </task>
-    <task id="LOCAL-00018" summary="优化">
-      <created>1476719449318</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1476719449318</updated>
+      <workItem from="1476930056695" duration="33738000" />
     </task>
     <task id="LOCAL-00019" summary="添加安装文件">
       <created>1477575905489</created>
@@ -854,11 +837,25 @@
       <option name="project" value="LOCAL" />
       <updated>1477643550604</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="modify install file">
+      <created>1477643951289</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1477643951289</updated>
+    </task>
+    <task id="LOCAL-00067" summary="modify install file">
+      <created>1477644422319</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1477644422320</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258135000" />
+    <option name="totallyTimeSpent" value="258652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,9 +868,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36144578" sideWeight="0.5343348" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28612304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -947,9 +944,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="modify install file" />
     <MESSAGE value="just for test instll" />
-    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
+    <MESSAGE value="modify install file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1369,15 +1366,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="54" selection-start-line="117" selection-start-column="54" selection-end-line="117" selection-end-column="54" />
+        <state relative-caret-position="180">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
-            <marker date="1477643926000" expanded="true" signature="633:680" ph="..." />
-            <marker date="1477643926000" expanded="true" signature="633:703" ph="..." />
-            <marker date="1477643926000" expanded="true" signature="633:732" ph="..." />
-            <marker date="1477643926000" expanded="true" signature="3033:3217" ph="..." />
-            <marker date="1477643926000" expanded="true" signature="3082:3209" ph="..." />
-            <marker date="1477643926000" expanded="true" signature="3111:3200" ph="..." />
+            <marker date="1477644415000" expanded="true" signature="633:635" ph="..." />
+            <marker date="1477644415000" expanded="true" signature="633:727" ph="..." />
+            <marker date="1477644415000" expanded="true" signature="3028:3212" ph="..." />
+            <marker date="1477644415000" expanded="true" signature="3077:3204" ph="..." />
+            <marker date="1477644415000" expanded="true" signature="3106:3195" ph="..." />
           </folding>
         </state>
       </provider>
