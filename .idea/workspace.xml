@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install/assets/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install/assets/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install/assets/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install/assets/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/install/data.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/footer.php" afterPath="$PROJECT_DIR$/install/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/header.php" afterPath="$PROJECT_DIR$/install/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +36,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
@@ -58,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -196,10 +189,10 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Common/Common/function.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/test/test.html" />
         <option value="$PROJECT_DIR$/install/header.php" />
         <option value="$PROJECT_DIR$/install/footer.php" />
         <option value="$PROJECT_DIR$/install/index.php" />
+        <option value="$PROJECT_DIR$/test/test.html" />
       </list>
     </option>
   </component>
@@ -537,14 +530,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="32801000" />
-    </task>
-    <task id="LOCAL-00015" summary="优化管理员注册登录界面。">
-      <created>1476196721726</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1476196721727</updated>
+      <workItem from="1476930056695" duration="32857000" />
     </task>
     <task id="LOCAL-00016" summary="修改用户端Controller，开始优化管理员界面。">
       <created>1476517947751</created>
@@ -882,11 +868,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477642274676</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="modify install file">
+      <created>1477643495316</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1477643495316</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257715000" />
+    <option name="totallyTimeSpent" value="257771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1328,14 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/install/data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4176">
@@ -1405,6 +1390,14 @@
             <marker date="1477643485000" expanded="true" signature="3054:3181" ph="..." />
             <marker date="1477643485000" expanded="true" signature="3083:3172" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
