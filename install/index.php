@@ -7,6 +7,7 @@ include_once('header.php');
 define('PROJECT_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
 $step = $_GET['step'];
 if($step == 'ok')  {
+
 	$status = 1;
 	exec('cd '.PROJECT_ROOT .' && cd ..');
 	$result = exec('/bin/bash Blog_init.bash' ,$output,$status);
@@ -29,6 +30,8 @@ if($step == 'ok')  {
 	    '<script language="JavaScript" type="text/javascript">
            window.location.href="/Blog/index.php";
     	</script>';
+	} else {
+		echo '<script type="text/javascript"> alert("发布失败或已是最新") </script>';
 	}
 
 //	$status = 1;
