@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="just for test instll">
+    <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/index.php" afterPath="$PROJECT_DIR$/install/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
@@ -477,14 +476,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="30010000" />
-    </task>
-    <task id="LOCAL-00008" summary="1.管理员模块搭建&#10;2.管理员注册、登录&#10;3.Rbac准备">
-      <created>1475280192914</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1475280192914</updated>
+      <workItem from="1476930056695" duration="30071000" />
     </task>
     <task id="LOCAL-00009" summary="改了好多,还没整理好,先提交一个,免得丢了。">
       <created>1475946893130</created>
@@ -822,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477633567013</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="modify install file">
+      <created>1477637698672</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1477637698672</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254924000" />
+    <option name="totallyTimeSpent" value="254985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -915,9 +914,9 @@
     <MESSAGE value="修改项目安装文件" />
     <MESSAGE value="modify default avatar path" />
     <MESSAGE value="modify project install file" />
-    <MESSAGE value="modify install file" />
     <MESSAGE value="just for test instll" />
-    <option name="LAST_COMMIT_MESSAGE" value="just for test instll" />
+    <MESSAGE value="modify install file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
