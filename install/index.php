@@ -9,7 +9,18 @@ include_once('header.php');
 $step = $_GET['step'];
 if($step == 3)  {
 	$status = 1;
-	$result = exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/develop' .' && rm -r Blog_Web/Runtime',$output,$status);
+	$result = exec(' cd '.KOL_ROOT.' && /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/develop',$output,$status);
+
+	echo '$result : ' .$result .'<br/><br/>';
+	echo '$status : ' .$status .'<br/><br/>';
+	echo '$output : ' .$output .'<br/><br/>';
+
+	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
+
+	echo '$result : ' .$result .'<br/><br/>';
+	echo '$status : ' .$status .'<br/><br/>';
+	echo '$output : ' .$output .'<br/><br/>';
+
 	if ($status == 0){
 	     echo '<script type="text/javascript"> alert("发布成功") </script>';
 //	    echo
@@ -17,9 +28,6 @@ if($step == 3)  {
 //           window.location.href="/mywork/qwechat";
 //    	</script>';
 	}
-	echo '$result : ' .$result .'<br/><br/>';
-	echo '$status : ' .$status .'<br/><br/>';
-	echo '$output : ' .$output .'<br/><br/>';
 // 	Header("Location: index.php");
 }
 

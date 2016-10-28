@@ -39,12 +39,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
-                <marker date="1477622755000" expanded="true" signature="1016:1199" ph="..." />
-                <marker date="1477622755000" expanded="true" signature="1064:1191" ph="..." />
-                <marker date="1477622755000" expanded="true" signature="1093:1182" ph="..." />
+                <marker date="1477623068000" expanded="true" signature="1178:1361" ph="..." />
+                <marker date="1477623068000" expanded="true" signature="1226:1353" ph="..." />
+                <marker date="1477623068000" expanded="true" signature="1255:1344" ph="..." />
               </folding>
             </state>
           </provider>
@@ -528,7 +528,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="25080000" />
+      <workItem from="1476930056695" duration="25367000" />
     </task>
     <task id="LOCAL-00001" summary="开始学习PHP后台开发,听说入门用ThinkPHP3.2.3比较好。&#10;创建了这个项目,每天提交一些,记录第一次用PHP搭建博客系统的过程。">
       <created>1475043354008</created>
@@ -782,11 +782,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477621842929</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="modify project install file">
+      <created>1477622786103</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1477622786103</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249994000" />
+    <option name="totallyTimeSpent" value="250281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1297,12 +1304,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
-            <marker date="1477622755000" expanded="true" signature="1016:1199" ph="..." />
-            <marker date="1477622755000" expanded="true" signature="1064:1191" ph="..." />
-            <marker date="1477622755000" expanded="true" signature="1093:1182" ph="..." />
+            <marker date="1477623068000" expanded="true" signature="1178:1361" ph="..." />
+            <marker date="1477623068000" expanded="true" signature="1226:1353" ph="..." />
+            <marker date="1477623068000" expanded="true" signature="1255:1344" ph="..." />
           </folding>
         </state>
       </provider>
