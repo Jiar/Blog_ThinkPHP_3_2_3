@@ -126,6 +126,8 @@ $PHP_SELF = addslashes(htmlspecialchars($_SERVER['PHP_SELF'] ? $_SERVER['PHP_SEL
 ?>
 
 <body>
+	<br/>
+	<br/>
 	<form method="post" action="index.php?step=ok">
 		<div class="form-actions">
 			<button type="submit" class="pull-right btn btn-primary">一键发布（测试环境）</button>
