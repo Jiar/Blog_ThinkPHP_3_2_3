@@ -4,13 +4,12 @@ set_time_limit(600);
 
 include_once('header.php');
 
-define('PROJECT_ROOT', substr(dirname(__FILE__), 0, -strlen('install')));
+define('PROJECT_ROOT', substr(dirname(__FILE__), 0, -strlen('Blog/install')));
 $step = $_GET['step'];
 if($step == 'ok')  {
 
 	$status = 1;
-	exec('cd '.PROJECT_ROOT .' && cd ..');
-	$result = exec('/bin/bash Blog_init.bash' ,$output,$status);
+	$result = exec('/bin/bash ' .PROJECT_ROOT .'Blog_init.bash' ,$output,$status);
 
 	echo '$result : ';
 	var_dump($result);
@@ -119,7 +118,6 @@ if($step == 'ok')  {
 ////           window.location.href="/mywork/qwechat";
 ////    	</script>';
 //	}
-
 // 	Header("Location: index.php");
 }
 
