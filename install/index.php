@@ -9,7 +9,7 @@ include_once('header.php');
 $step = $_GET['step'];
 if($step == 4)  {
 
-	$result = exec('cd .. ' .' && /bin/bash Blog_init.bash' ,$output,$status);
+	$result = exec('cd .. ' .' && /bin/bash Blog_start.bash' ,$output,$status);
 
 	echo '$result : ';
 	var_dump($result);
