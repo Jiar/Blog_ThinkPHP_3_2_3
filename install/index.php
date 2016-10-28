@@ -31,8 +31,8 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 2
-//	$result = exec('/usr/bin/git fetch --all',$output,$status);
-	$result = exec('sudo -u root -S /usr/bin/git fetch --all < ~/.sudopass/sudopass.secret',$output,$status);
+	$result = exec('/usr/bin/git fetch --all',$output,$status);
+//	$result = exec('sudo -u root -S /usr/bin/git fetch --all < ~/.sudopass/sudopass.secret',$output,$status);
 
 	echo '<h5>step 2</h5>';
 	echo '><br/>';
@@ -50,8 +50,8 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 3
-//	$result = exec('/usr/bin/git reset --hard origin/develop',$output,$status);
-	$result = exec('sudo -u root -S /usr/bin/git reset --hard origin/develop < ~/.sudopass/sudopass.secret',$output,$status);
+	$result = exec('/usr/bin/git reset --hard origin/develop',$output,$status);
+//	$result = exec('sudo -u root -S /usr/bin/git reset --hard origin/develop < ~/.sudopass/sudopass.secret',$output,$status);
 
 	echo '<h5>step 3</h5>';
 	echo '><br/>';
@@ -69,8 +69,8 @@ if($step == 4)  {
 	echo '<br/><br/>';
 
 	// step 4
-//	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
-	$result = exec('sudo -u root -S rm -r Blog_Web/Runtime < ~/.sudopass/sudopass.secret',$output,$status);
+	$result = exec('rm -r Blog_Web/Runtime',$output,$status);
+//	$result = exec('sudo -u root -S rm -r Blog_Web/Runtime < ~/.sudopass/sudopass.secret',$output,$status);
 
 	echo '<h5>step 4</h5>';
 	echo '<br/>';
