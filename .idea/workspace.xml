@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" afterPath="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
@@ -72,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1230">
@@ -94,14 +92,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/User/View/Home/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+            <state relative-caret-position="334">
+              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,9 +227,9 @@
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
+        <option value="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" />
       </list>
     </option>
   </component>
@@ -632,21 +629,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="46932000" />
-    </task>
-    <task id="LOCAL-00038" summary="modify project install file">
-      <created>1477623076417</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1477623076417</updated>
-    </task>
-    <task id="LOCAL-00039" summary="modify project install file">
-      <created>1477623588183</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1477623588183</updated>
+      <workItem from="1476930056695" duration="47350000" />
     </task>
     <task id="LOCAL-00040" summary="just for test instll">
       <created>1477623668053</created>
@@ -977,11 +960,25 @@
       <option name="project" value="LOCAL" />
       <updated>1477776800799</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="modify user.html">
+      <created>1477777099161</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1477777099161</updated>
+    </task>
+    <task id="LOCAL-00088" summary="modify user.html">
+      <created>1477777199063</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1477777199063</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271846000" />
+    <option name="totallyTimeSpent" value="272264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,9 +991,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36144578" sideWeight="0.5343348" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28612304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1470,17 +1467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog_Web/User/View/Home/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1100">
@@ -1507,6 +1493,16 @@
           <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog_Web/User/View/Home/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

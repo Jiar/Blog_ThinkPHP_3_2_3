@@ -78,7 +78,7 @@
     <div class="list-group">
         <volist name="blogs" id="blog">
             <a href="{:U('User/Blog/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}" class="list-group-item"
-               style="background:url('{$blog["cover_img"]}');">
+               style="background:url('{$blog["cover_img"]}') cover;">
                 <h4 class="list-group-item-heading">{$blog['title']}</h4>
                 <h6>
                     <if condition="$blog['is_block'] == 1">
