@@ -10,7 +10,7 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class UserApi extends Controller {
+class UserApiController extends Controller {
 
     /**
      * 获取用户信息，需要通过POST请求形式获取

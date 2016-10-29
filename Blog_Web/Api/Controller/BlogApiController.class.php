@@ -10,7 +10,7 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class BlogApi extends Controller {
+class BlogApiController extends Controller {
 
     public function addBlog_action() {
 
