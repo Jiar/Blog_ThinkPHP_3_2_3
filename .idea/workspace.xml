@@ -95,15 +95,15 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/install/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="165">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
-                <marker date="1477770902000" expanded="true" signature="685:687" ph="..." />
-                <marker date="1477770902000" expanded="true" signature="685:715" ph="..." />
-                <marker date="1477770902000" expanded="true" signature="685:734" ph="..." />
-                <marker date="1477770902000" expanded="true" signature="685:753" ph="..." />
-                <marker date="1477770902000" expanded="true" signature="685:754" ph="..." />
-                <marker date="1477770902000" expanded="true" signature="685:782" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:769" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:797" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:816" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:835" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:836" ph="..." />
+                <marker date="1477771126000" expanded="true" signature="767:864" ph="..." />
               </folding>
             </state>
           </provider>
@@ -615,14 +615,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="42211000" />
-    </task>
-    <task id="LOCAL-00029" summary="fix table bug">
-      <created>1477587633277</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1477587633277</updated>
+      <workItem from="1476930056695" duration="42445000" />
     </task>
     <task id="LOCAL-00030" summary="fix table bug">
       <created>1477587886884</created>
@@ -960,11 +953,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477766416546</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="modify install file">
+      <created>1477770932517</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1477770932518</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267125000" />
+    <option name="totallyTimeSpent" value="267359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1051,11 +1051,11 @@
     <MESSAGE value="modify project install file" />
     <MESSAGE value="just for test instll" />
     <MESSAGE value="delete unused register.html" />
-    <MESSAGE value="modify install file" />
     <MESSAGE value="modify README.md" />
     <MESSAGE value="Creat Api Module" />
     <MESSAGE value="modify Api Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify Api Controller" />
+    <MESSAGE value="modify install file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify install file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,15 +1480,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/install/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="165">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
-            <marker date="1477770902000" expanded="true" signature="685:687" ph="..." />
-            <marker date="1477770902000" expanded="true" signature="685:715" ph="..." />
-            <marker date="1477770902000" expanded="true" signature="685:734" ph="..." />
-            <marker date="1477770902000" expanded="true" signature="685:753" ph="..." />
-            <marker date="1477770902000" expanded="true" signature="685:754" ph="..." />
-            <marker date="1477770902000" expanded="true" signature="685:782" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:769" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:797" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:816" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:835" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:836" ph="..." />
+            <marker date="1477771126000" expanded="true" signature="767:864" ph="..." />
           </folding>
         </state>
       </provider>

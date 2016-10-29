@@ -8,9 +8,10 @@ define('PROJECT_ROOT', substr(dirname(__FILE__), 0, -strlen('Blog/install')));
 $step = $_GET['step'];
 if($step == 'ok')  {
 
-	echo '/bin/bash ' .PROJECT_ROOT .'Blog_init.bash';
+//	echo '/bin/bash ' .PROJECT_ROOT .'Blog_init.bash';
 	$status = 1;
-	$result = exec('/bin/bash ' .PROJECT_ROOT .'Blog_init.bash' ,$output,$status);
+//	$result = exec('/bin/bash ' .PROJECT_ROOT .'Blog_init.bash' ,$output,$status);
+	$result = exec('/bin/bash /var/www/youths/Blog_init.bash' ,$output,$status);
 
 	echo '$result : ';
 	var_dump($result);
