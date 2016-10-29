@@ -98,8 +98,8 @@ class UserController extends Controller {
         $path = explode('/', $path);
         var_dump($path);
         $rootName = '/';
-        if(count($path) > 1) {
-            $rootName .= $path[count($path)-1] .'/';
+        if(count($path) > 2) {
+            $rootName = $rootName .$path[count($path)-2] .'/';
         }
         $data['avatar'] = $rootName .'Public/Static/images/avatar-default.png';
 
