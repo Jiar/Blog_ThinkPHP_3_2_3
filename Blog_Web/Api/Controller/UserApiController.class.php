@@ -18,8 +18,8 @@ class UserApiController extends Controller {
      * @param account  邮箱或用户名
      * @param password 登录密码
      *
-     * @return {"tag":0, "info":"info"}
-     * tag为0表示获取失败，1表示获取成功；无论是否获取成功info表示内容
+     * @return {"success":0, "info":"info"}
+     * success为0表示获取失败，1表示获取成功；无论是否获取成功info表示内容
      */
     public function fetchEntity_action() {
         $account = I('post.account');
@@ -32,12 +32,12 @@ class UserApiController extends Controller {
             $user = D('User')->where($data)->select();
             $user = $user[0];
             if(count($user) == 0) {
-                $backEntity['tag'] = 0;
+                $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户不存在';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
             if($user['is_block'] == 1) {
-                $backEntity['tag'] = 0;
+                $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户已被管理员屏蔽';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
@@ -48,12 +48,12 @@ class UserApiController extends Controller {
             $user = D('User')->where($data)->select();
             $user = $user[0];
             if(count($user) == 0) {
-                $backEntity['tag'] = 0;
+                $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户不存在';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
             if($user['is_block'] == 1) {
-                $backEntity['tag'] = 0;
+                $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户已被管理员屏蔽';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
@@ -67,11 +67,11 @@ class UserApiController extends Controller {
             $user = D('User')->select($id);
             $user = $user[0];
             $user['password'] = '';
-            $backEntity['tag'] = 1;
+            $backEntity['success'] = 1;
             $backEntity['info'] = $user;
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         } else {
-            $backEntity['tag'] = 0;
+            $backEntity['success'] = 0;
             $backEntity['info'] = '账户或密码错误';
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         }
