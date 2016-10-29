@@ -2,7 +2,7 @@
 return array(
 
     'DEFAULT_CONTROLLER'    =>  'UserApi', // 默认控制器名称
-    'DEFAULT_ACTION'        =>  'login', // 默认操作名称
+    'DEFAULT_ACTION'        =>  'fetchEntity', // 默认操作名称
 
     'DB_TYPE' => 'mysql',
     'DB_HOST' => 'localhost',

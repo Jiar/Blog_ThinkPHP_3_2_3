@@ -93,7 +93,16 @@ class UserController extends Controller {
         $data['userurl'] = '/User/Home/' .$name;
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
-        $data['avatar'] = WEB_ROOT .'/Public/Static/images/avatar-default.png';
+
+        $path = WEB_ROOT;
+        $path = explode('/', $path);
+        var_dump($path);
+        $rootName = '/';
+        if(count($path) > 1) {
+            $rootName .= $path[count($path)-1] .'/';
+        }
+        $data['avatar'] = $rootName .'Public/Static/images/avatar-default.png';
+
         if (!$user->create($data)){
             $this->error(structureErrorInfo($user->getError()));
         }else{
@@ -103,7 +112,7 @@ class UserController extends Controller {
             session('userToken', $result['token']);
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
-            redirect(U('User/user'));
+//            redirect(U('User/user'));
         }
     }
 

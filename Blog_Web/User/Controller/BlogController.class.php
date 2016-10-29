@@ -28,6 +28,11 @@ class BlogController extends Controller {
         $blog_id = $blog[0]['blog_id']+1;
         $blog = D('Blog');
         $data['title'] = I('post.title');
+        if(I('post.coverImg') == null) {
+            $data['coverImg'] = WEB_ROOT .'/Public/Static/images/blog-cover-default.jpeg';
+        } else {
+            // 图片处理
+        }
         $data['user_id'] = session('userId');
         $data['blog_id'] = $blog_id;
         $data['content'] = I('post.content');

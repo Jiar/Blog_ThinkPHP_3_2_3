@@ -24,6 +24,7 @@ class UserApiController extends Controller {
     public function fetchEntity_action() {
         $account = I('post.account');
         $password = sha1(I("post.password"));
+        header("Access-Control-Allow-Origin: *");
         if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
             // 邮箱登录
             $data['email'] = $account;
