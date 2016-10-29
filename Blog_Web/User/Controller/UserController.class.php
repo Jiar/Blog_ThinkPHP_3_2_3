@@ -96,7 +96,6 @@ class UserController extends Controller {
 
         $path = WEB_ROOT;
         $path = explode('/', $path);
-        var_dump($path);
         $rootName = '/';
         if(count($path) > 2) {
             $rootName = $rootName .$path[count($path)-2] .'/';

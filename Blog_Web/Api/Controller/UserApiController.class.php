@@ -22,9 +22,9 @@ class UserApiController extends Controller {
      * success为0表示获取失败，1表示获取成功；无论是否获取成功info表示内容
      */
     public function fetchEntity_action() {
+        header("Access-Control-Allow-Origin: *");
         $account = I('post.account');
         $password = sha1(I("post.password"));
-        header("Access-Control-Allow-Origin: *");
         if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
             // 邮箱登录
             $data['email'] = $account;
