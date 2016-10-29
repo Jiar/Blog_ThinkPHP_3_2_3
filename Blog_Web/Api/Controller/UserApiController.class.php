@@ -46,7 +46,7 @@ class UserApiController extends Controller {
                 $where['id'] = $id;
                 $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
                 $data['last_login_time'] = date('Y-m-d H:i:s');
-                D('User')->where($where)->data($data)->save();
+                D('User')->where($where)->save($data);
                 $user = D('User')->select($id);
                 $user = $user[0];
                 $user['password'] = '';
@@ -79,7 +79,7 @@ class UserApiController extends Controller {
                 $where['id'] = $id;
                 $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
                 $data['last_login_time'] = date('Y-m-d H:i:s');
-                D('User')->where($where)->data($data)->save();
+                D('User')->where($where)->save($data);
                 $user = D('User')->select($id);
                 $user = $user[0];
                 $user['password'] = '';

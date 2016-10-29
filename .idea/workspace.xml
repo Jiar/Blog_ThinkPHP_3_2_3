@@ -71,8 +71,8 @@
       <file leaf-file-name="UserApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="97">
+              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
@@ -753,28 +753,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="48692000" />
-    </task>
-    <task id="LOCAL-00045" summary="modify install file">
-      <created>1477626270084</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1477626270084</updated>
-    </task>
-    <task id="LOCAL-00046" summary="just for test instll">
-      <created>1477626403605</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1477626403605</updated>
-    </task>
-    <task id="LOCAL-00047" summary="modify install file">
-      <created>1477628362193</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1477628362193</updated>
+      <workItem from="1476930056695" duration="48943000" />
     </task>
     <task id="LOCAL-00048" summary="just for test instll">
       <created>1477628515730</created>
@@ -1098,11 +1077,32 @@
       <option name="project" value="LOCAL" />
       <updated>1477780695457</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add token validate">
+      <created>1477781021250</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1477781021250</updated>
+    </task>
+    <task id="LOCAL-00095" summary="add token validate">
+      <created>1477781128435</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1477781128435</updated>
+    </task>
+    <task id="LOCAL-00096" summary="add token validate">
+      <created>1477781189600</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1477781189600</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273606000" />
+    <option name="totallyTimeSpent" value="273857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1624,8 +1624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="97">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>
