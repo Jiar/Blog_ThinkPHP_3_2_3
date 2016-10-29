@@ -112,7 +112,7 @@ class UserController extends Controller {
             session('userToken', $result['token']);
             cookie('name',$result['name']);
             cookie('avatar',$result['avatar']);
-//            redirect(U('User/user'));
+            redirect(U('User/user'));
         }
     }
 
