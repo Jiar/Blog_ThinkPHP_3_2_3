@@ -25,6 +25,7 @@ class UserApiController extends Controller {
         header("Access-Control-Allow-Origin: *");
         $account = I('post.account');
         $password = sha1(I("post.password"));
+        $user = null;
         if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
             // 邮箱登录
             $data['email'] = $account;
