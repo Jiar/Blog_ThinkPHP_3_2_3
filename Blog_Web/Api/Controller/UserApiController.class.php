@@ -25,7 +25,6 @@ class UserApiController extends Controller {
         header("Access-Control-Allow-Origin: *");
         $account = I('post.account');
         $password = sha1(I("post.password"));
-        $user = null;
         if(filter_var($account, FILTER_VALIDATE_EMAIL)) {
             // 邮箱登录
             $data['email'] = $account;
@@ -40,6 +39,23 @@ class UserApiController extends Controller {
             if($user['is_block'] == 1) {
                 $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户已被管理员屏蔽';
+                $this->ajaxReturn(json_encode($backEntity), 'JSON');
+            }
+            if(count($user) != 0) {
+                $id = $user['id'];
+                $data['id'] = $id;
+                $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
+                $data['last_login_time'] = date('Y-m-d H:i:s');
+                D('User')->save($data);
+                $user = D('User')->select($id);
+                $user = $user[0];
+                $user['password'] = '';
+                $backEntity['success'] = 1;
+                $backEntity['info'] = $user;
+                $this->ajaxReturn(json_encode($backEntity), 'JSON');
+            } else {
+                $backEntity['success'] = 0;
+                $backEntity['info'] = '账户或密码错误';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
         } else {
@@ -58,23 +74,23 @@ class UserApiController extends Controller {
                 $backEntity['info'] = '该用户已被管理员屏蔽';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-        }
-        if(count($user) != 0) {
-            $id = $user['id'];
-            $data['id'] = $id;
-            $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
-            $data['last_login_time'] = date('Y-m-d H:i:s');
-            D('User')->save($data);
-            $user = D('User')->select($id);
-            $user = $user[0];
-            $user['password'] = '';
-            $backEntity['success'] = 1;
-            $backEntity['info'] = $user;
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-        } else {
-            $backEntity['success'] = 0;
-            $backEntity['info'] = '账户或密码错误';
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+            if(count($user) != 0) {
+                $id = $user['id'];
+                $data['id'] = $id;
+                $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
+                $data['last_login_time'] = date('Y-m-d H:i:s');
+                D('User')->save($data);
+                $user = D('User')->select($id);
+                $user = $user[0];
+                $user['password'] = '';
+                $backEntity['success'] = 1;
+                $backEntity['info'] = $user;
+                $this->ajaxReturn(json_encode($backEntity), 'JSON');
+            } else {
+                $backEntity['success'] = 0;
+                $backEntity['info'] = '账户或密码错误';
+                $this->ajaxReturn(json_encode($backEntity), 'JSON');
+            }
         }
     }
 
