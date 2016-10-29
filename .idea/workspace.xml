@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserApiController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserApiController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state relative-caret-position="127">
+              <caret line="78" column="26" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="26" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
@@ -80,14 +80,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+            <state relative-caret-position="297">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="13" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
-                <marker date="1477780672000" expanded="true" signature="796:1047" ph="//..." />
               </folding>
             </state>
           </provider>
@@ -222,8 +221,8 @@
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" />
-        <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php" />
+        <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
       </list>
     </option>
   </component>
@@ -753,14 +752,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="48943000" />
-    </task>
-    <task id="LOCAL-00048" summary="just for test instll">
-      <created>1477628515730</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1477628515730</updated>
+      <workItem from="1476930056695" duration="49050000" />
     </task>
     <task id="LOCAL-00049" summary="modify install file">
       <created>1477629184501</created>
@@ -1098,11 +1090,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477781189600</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="add token validate">
+      <created>1477781275177</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1477781275177</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273857000" />
+    <option name="totallyTimeSpent" value="273964000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1603,17 +1602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding>
-            <element signature="e#6#110#0#PHP" expanded="true" />
-            <marker date="1477780672000" expanded="true" signature="796:1047" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1624,8 +1612,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        <state relative-caret-position="127">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>

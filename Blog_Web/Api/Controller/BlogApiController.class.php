@@ -29,14 +29,14 @@ class BlogApiController extends Controller {
         $blog = D('Blog');
         $user_id = I('post.user_id');
         $token = I('post.token');
-        $data['id'] = $user_id;
-        $data['token'] = $token;
-        $users = D('User')->where($data)->select();
-        if(count($users) == 0) {
-            $backEntity['success'] = 0;
-            $backEntity['info'] = '该用户不存在或token失效';
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-        }
+//        $data['id'] = $user_id;
+//        $data['token'] = $token;
+//        $users = D('User')->where($data)->select();
+//        if(count($users) == 0) {
+//            $backEntity['success'] = 0;
+//            $backEntity['info'] = '该用户不存在或token失效';
+//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//        }
         $data['user_id'] = $user_id;
         $blog = $blog->where($data)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
