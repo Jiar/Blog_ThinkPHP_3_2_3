@@ -23,17 +23,32 @@ class BlogController extends Controller {
 
     public function addBlogForm_action() {
         $blog = D('Blog');
-        $data['user_id'] = session('userId');
-        $blog = $blog->where($data)->order('blog_id desc')->select();
+        $where['user_id'] = session('userId');
+        $blog = $blog->where($where)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
-        $data['title'] = I('post.title');
-        if(I('post.cover_img') == null) {
+        $data = array();
+        if($_FILES['cover_img']["size"] == 0) {
             $data['cover_img'] = getWebRootPath() .'Public/Static/images/blog-cover-default.jpeg';
         } else {
-            // 图片处理
+            $config = array(
+                'maxSize'    =>    3145728,
+                'rootPath'   =>    C('DEFAULT_UPLOADS'),
+                'savePath'   =>    'Blogs/',
+                'saveName'   =>    array('uniqid',''),
+                'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+                'autoSub'    =>    true,
+                'subName'    =>    array('date','Ymd'),
+            );
+            $upload = new \Think\Upload($config);
+            $info = $upload->uploadOne($_FILES['cover_img']);
+            if(!$info) {
+                $this->error(structureErrorInfo($upload->getError()));
+            }
+            $data['cover_img'] = getWebRootPath().substr(C('DEFAULT_UPLOADS'), 2).$info['savepath'].$info['savename'];
         }
         $data['user_id'] = session('userId');
         $data['blog_id'] = $blog_id;
+        $data['title'] = I('post.title');
         $data['content'] = I('post.content');
         $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
@@ -69,13 +84,12 @@ class BlogController extends Controller {
     }
 
     public function modifyBlogForm_action() {
-        $blog = D('Blog');
         $where['user_id'] = I('post.user_id');
         $where['blog_id'] = I('post.blog_id');
         $data['title'] = I('post.title');
         $data['content'] = I('post.content');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
-        $blog->where($where)->save($data);
+        D('Blog')->where($where)->save($data);
         redirect(U('User/user'));
     }
 
@@ -85,10 +99,9 @@ class BlogController extends Controller {
             return;
         }
         if(session('?userId') && session('?userToken')) {
-            $blog = D('Blog');
             $data['user_id'] = $userId;
             $data['blog_id'] = $blogId;
-            $blog->where($data)->delete();
+            D('Blog')->where($data)->delete();
         }
         redirect(U('User/user'));
     }
@@ -101,10 +114,9 @@ class BlogController extends Controller {
             return;
         }
         $userId = $result['id'];
-        $blog = D('Blog');
         $data['user_id'] = $userId;
         $data['blog_id'] = $blogId;
-        $blog = $blog->where($data)->select();
+        $blog = D('Blog')->where($data)->select();
         if(count($blog) == 0) {
             $this->error('找不到该博客');
             return;

@@ -44,13 +44,7 @@ class BlogApiController extends Controller {
 
         $data = array();
         if($_FILES['cover_img']["size"] == 0) {
-            $path = WEB_ROOT;
-            $path = explode('/', $path);
-            $rootName = '/';
-            if(count($path) > 2) {
-                $rootName = $rootName .$path[count($path)-2] .'/';
-            }
-            $data['cover_img'] = $rootName .'Public/Static/images/blog-cover-default.jpeg';
+            $data['cover_img'] = getWebRootPath() .'Public/Static/images/blog-cover-default.jpeg';
         } else {
             $config = array(
                 'maxSize'    =>    3145728,
