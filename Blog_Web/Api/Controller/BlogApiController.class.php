@@ -42,6 +42,8 @@ class BlogApiController extends Controller {
         $where['user_id'] = $user_id;
         $blog = $blog->where($where)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
+
+        $data = array();
         if($_FILES['cover_img']["size"] == 0) {
             $path = WEB_ROOT;
             $path = explode('/', $path);
@@ -53,7 +55,7 @@ class BlogApiController extends Controller {
         } else {
             $config = array(
                 'maxSize'    =>    3145728,
-                'rootPath'   =>    './Uploads/',
+                'rootPath'   =>    '/Uploads/',
                 'savePath'   =>    'Blogs/',
                 'saveName'   =>    array('uniqid',''),
                 'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
@@ -67,8 +69,7 @@ class BlogApiController extends Controller {
                 $backEntity['info'] = $upload->getError();
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-            $cover_img = $info['rootPath'].$info['saveName'];
-            $data['cover_img'] = $cover_img;
+            $data['cover_img'] = getWebRootPath().$info['rootPath'].$info['savePath'].$info['saveName'].$info['saveExt'];
         }
         $data['title'] = I('post.title');
         $data['user_id'] = $user_id;

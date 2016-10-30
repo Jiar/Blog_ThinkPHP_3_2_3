@@ -93,14 +93,7 @@ class UserController extends Controller {
         $data['userurl'] = '/User/Home/' .$name;
         $data['last_modify_time'] = date('Y-m-d H:i:s');
         $data['last_login_time'] = date('Y-m-d H:i:s');
-
-        $path = WEB_ROOT;
-        $path = explode('/', $path);
-        $rootName = '/';
-        if(count($path) > 2) {
-            $rootName = $rootName .$path[count($path)-2] .'/';
-        }
-        $data['avatar'] = $rootName .'Public/Static/images/avatar-default.png';
+        $data['avatar'] = getWebRootPath() .'Public/Static/images/avatar-default.png';
 
         if (!$user->create($data)){
             $this->error(structureErrorInfo($user->getError()));

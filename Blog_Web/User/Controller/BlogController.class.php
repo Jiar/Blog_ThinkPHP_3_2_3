@@ -28,13 +28,7 @@ class BlogController extends Controller {
         $blog_id = $blog[0]['blog_id']+1;
         $data['title'] = I('post.title');
         if(I('post.cover_img') == null) {
-            $path = WEB_ROOT;
-            $path = explode('/', $path);
-            $rootName = '/';
-            if(count($path) > 2) {
-                $rootName = $rootName .$path[count($path)-2] .'/';
-            }
-            $data['cover_img'] = $rootName .'Public/Static/images/blog-cover-default.jpeg';
+            $data['cover_img'] = getWebRootPath() .'Public/Static/images/blog-cover-default.jpeg';
         } else {
             // 图片处理
         }

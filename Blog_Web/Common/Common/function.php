@@ -8,6 +8,16 @@
 
 define('WEB_ROOT', substr(dirname(__FILE__), 0, -strlen('Blog_Web/Common/Common')));
 
+function getWebRootPath() {
+    $path = WEB_ROOT;
+    $path = explode('/', $path);
+    $rootName = '/';
+    if(count($path) > 2) {
+        $rootName = $rootName .$path[count($path)-2] .'/';
+    }
+    return $rootName;
+}
+
 /**
  * 判断一个PHP数组是关联数组还是数字数组
  *
