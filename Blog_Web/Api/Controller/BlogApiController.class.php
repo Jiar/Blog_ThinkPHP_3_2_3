@@ -53,7 +53,7 @@ class BlogApiController extends Controller {
         } else {
             $config = array(
                 'maxSize'    =>    3145728,
-                'rootPath'   =>    '/Uploads/',
+                'rootPath'   =>    './Uploads/',
                 'savePath'   =>    'Blogs/',
                 'saveName'   =>    array('uniqid',''),
                 'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
