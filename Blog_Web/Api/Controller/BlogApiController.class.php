@@ -30,20 +30,20 @@ class BlogApiController extends Controller {
         $user_id = I('post.user_id');
         $token = I('post.token');
 
-        $where['id'] = $user_id;
-        $where['token'] = $token;
-        $users = D('User')->where($where)->select();
-        if(count($users) == 0) {
-            $backEntity['success'] = 0;
-            $backEntity['info'] = '该用户不存在或token失效';
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-        }
+//        $where['id'] = $user_id;
+//        $where['token'] = $token;
+//        $users = D('User')->where($where)->select();
+//        if(count($users) == 0) {
+//            $backEntity['success'] = 0;
+//            $backEntity['info'] = '该用户不存在或token失效';
+//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//        }
 
         $where = null;
         $where['user_id'] = $user_id;
         $blog = $blog->where($where)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
-        if($_FILES['cover_img'] == null) {
+        if($_FILES['cover_img']["size"] == 0) {
             $path = WEB_ROOT;
             $path = explode('/', $path);
             $rootName = '/';
