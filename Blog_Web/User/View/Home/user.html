@@ -77,8 +77,7 @@
 
     <div class="list-group">
         <volist name="blogs" id="blog">
-            <a href="{:U('User/Blog/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}" class="list-group-item"
-               style="background:url('{$blog["cover_img"]}');">
+            <a href="{:U('User/Blog/detailBlog',array('user'=>$_GET['username'], 'blogId'=>$blog['blog_id']))}" class="list-group-item">
                 <h4 class="list-group-item-heading">{$blog['title']}</h4>
                 <h6>
                     <if condition="$blog['is_block'] == 1">
@@ -89,6 +88,7 @@
                 <span class="list-group-item-text">{$Think.get.username}</span>&nbsp
                 <span class="list-group-item-text">浏览次数: {$blog['read_count']}</span>&nbsp
                 <span class="list-group-item-text">创建时间: {$blog['create_time']}</span>
+                <img src="{$blog["cover_img"]}"/>
             </a>
         </volist>
 
