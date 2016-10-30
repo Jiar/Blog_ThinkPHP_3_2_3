@@ -42,10 +42,11 @@ class UserApiController extends Controller {
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
             $id = $user['id'];
-            $where['id'] = $id;
+            $data = null;
+            $data['id'] = $id;
             $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
             $data['last_login_time'] = date('Y-m-d H:i:s');
-            D('User')->where($where)->save($data);
+            M('User')->save($data);
             $user = D('User')->select($id);
             $user = $user[0];
             $user['password'] = '';
@@ -69,10 +70,11 @@ class UserApiController extends Controller {
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
             $id = $user['id'];
-            $where['id'] = $id;
+            $data = null;
+            $data['id'] = $id;
             $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
             $data['last_login_time'] = date('Y-m-d H:i:s');
-            D('User')->where($where)->save($data);
+            M('User')->save($data);
             $user = D('User')->select($id);
             $user = $user[0];
             $user['password'] = '';
