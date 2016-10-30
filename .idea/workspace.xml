@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Common/Common/function.php" afterPath="$PROJECT_DIR$/Blog_Web/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +93,8 @@
       <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+            <state relative-caret-position="76">
+              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
@@ -804,14 +800,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="55774000" />
-    </task>
-    <task id="LOCAL-00068" summary="modify install file">
-      <created>1477644548236</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1477644548236</updated>
+      <workItem from="1476930056695" duration="55886000" />
     </task>
     <task id="LOCAL-00069" summary="modify install file">
       <created>1477644671250</created>
@@ -1149,11 +1138,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477839388906</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="modify pic path">
+      <created>1477841125750</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1477841125750</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280688000" />
+    <option name="totallyTimeSpent" value="280800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1674,8 +1670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>
