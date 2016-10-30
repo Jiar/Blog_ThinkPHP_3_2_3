@@ -69,12 +69,7 @@ class BlogApiController extends Controller {
                 $backEntity['info'] = $upload->getError();
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-
-//            $backEntity['success'] = 1;
-//            $backEntity['info'] = $info;
-//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-
-            $data['cover_img'] = getWebRootPath().C('DEFAULT_UPLOADS').$info['savepath'].$info['savename'];
+            $data['cover_img'] = getWebRootPath().substr(C('DEFAULT_UPLOADS'), 2).$info['savepath'].$info['savename'];
         }
         $data['title'] = I('post.title');
         $data['user_id'] = $user_id;
