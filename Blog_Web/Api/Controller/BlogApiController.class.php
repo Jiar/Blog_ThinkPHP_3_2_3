@@ -27,16 +27,17 @@ class BlogApiController extends Controller {
     public function addBlog_action() {
         header("Access-Control-Allow-Origin: *");
         $blog = D('Blog');
-        $user_id = I('post.user_id');
-        $token = I('post.token');
-        $where['id'] = $user_id;
-        $where['token'] = $token;
-        $users = D('User')->where($where)->select();
-        if(count($users) == 0) {
-            $backEntity['success'] = 0;
-            $backEntity['info'] = '该用户不存在或token失效';
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-        }
+//        $user_id = I('post.user_id');
+//        $token = I('post.token');
+        $user_id = 2;
+//        $where['id'] = $user_id;
+//        $where['token'] = $token;
+//        $users = D('User')->where($where)->select();
+//        if(count($users) == 0) {
+//            $backEntity['success'] = 0;
+//            $backEntity['info'] = '该用户不存在或token失效';
+//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//        }
         $where = null;
         $where['user_id'] = $user_id;
         $blog = $blog->where($where)->order('blog_id desc')->select();
