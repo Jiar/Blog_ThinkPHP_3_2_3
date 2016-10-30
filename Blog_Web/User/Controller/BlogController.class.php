@@ -26,7 +26,6 @@ class BlogController extends Controller {
         $data['user_id'] = session('userId');
         $blog = $blog->where($data)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
-        $blog = D('Blog');
         $data['title'] = I('post.title');
         if(I('post.cover_img') == null) {
             $path = WEB_ROOT;
@@ -44,6 +43,7 @@ class BlogController extends Controller {
         $data['content'] = I('post.content');
         $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
+        $blog = D('Blog');
         if(!$blog->create($data)) {
             $this->error(structureErrorInfo($blog->getError()));
         } else {

@@ -86,6 +86,7 @@ class BlogApiController extends Controller {
         $data['content'] = I('post.content');
         $data['create_time'] = date('Y-m-d H:i:s');
         $data['last_modify_time'] = date('Y-m-d H:i:s');
+        $blog = D('Blog');
         if(!$blog->create($data)) {
             $backEntity['success'] = 0;
             $backEntity['info'] = $blog->getError();

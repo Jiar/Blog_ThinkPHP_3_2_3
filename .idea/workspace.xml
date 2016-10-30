@@ -4,6 +4,7 @@
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlogController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlogController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-455">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="195">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
@@ -90,18 +91,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="53" column="16" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="237">
+              <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="26" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
-                <marker date="1477816349000" expanded="true" signature="1650:1983" ph="..." />
-                <marker date="1477816349000" expanded="true" signature="1793:1877" ph="..." />
-                <marker date="1477816349000" expanded="true" signature="1991:2872" ph="..." />
-                <marker date="1477816349000" expanded="true" signature="2022:2411" ph="..." />
-                <marker date="1477816349000" expanded="true" signature="2556:2749" ph="..." />
               </folding>
             </state>
           </provider>
@@ -224,10 +220,10 @@
         <option value="$PROJECT_DIR$/install/index.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/View/Home/user.html" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
+        <option value="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
       </list>
     </option>
   </component>
@@ -757,14 +753,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="51335000" />
-    </task>
-    <task id="LOCAL-00055" summary="modify install file">
-      <created>1477633499619</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1477633499620</updated>
+      <workItem from="1476930056695" duration="51635000" />
     </task>
     <task id="LOCAL-00056" summary="just for test instll">
       <created>1477633567013</created>
@@ -1102,11 +1091,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477816172772</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="modify api">
+      <created>1477816369539</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1477816369539</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276249000" />
+    <option name="totallyTimeSpent" value="276549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1565,16 +1561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#110#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/User/Controller/HomeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1627,15 +1613,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="237">
+          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="26" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
-            <marker date="1477816349000" expanded="true" signature="1650:1983" ph="..." />
-            <marker date="1477816349000" expanded="true" signature="1793:1877" ph="..." />
-            <marker date="1477816349000" expanded="true" signature="1991:2872" ph="..." />
-            <marker date="1477816349000" expanded="true" signature="2022:2411" ph="..." />
-            <marker date="1477816349000" expanded="true" signature="2556:2749" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
