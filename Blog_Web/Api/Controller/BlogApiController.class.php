@@ -70,9 +70,9 @@ class BlogApiController extends Controller {
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
 
-            $backEntity['success'] = 1;
-            $backEntity['info'] = $info;
-            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//            $backEntity['success'] = 1;
+//            $backEntity['info'] = $info;
+//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
 
             $data['cover_img'] = getWebRootPath().C('DEFAULT_UPLOADS').$info['savepath'].$info['savename'];
         }
