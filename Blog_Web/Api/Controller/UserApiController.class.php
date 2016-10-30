@@ -30,67 +30,55 @@ class UserApiController extends Controller {
             $data['email'] = $account;
             $data['password'] = $password;
             $user = D('User')->where($data)->select();
-            $user = $user[0];
             if(count($user) == 0) {
                 $backEntity['success'] = 0;
-                $backEntity['info'] = '该用户不存在';
+                $backEntity['info'] = '账户或密码错误';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
+            $user = $user[0];
             if($user['is_block'] == 1) {
                 $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户已被管理员屏蔽';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-            if(count($user) != 0) {
-                $id = $user['id'];
-                $where['id'] = $id;
-                $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
-                $data['last_login_time'] = date('Y-m-d H:i:s');
-                D('User')->where($where)->save($data);
-                $user = D('User')->select($id);
-                $user = $user[0];
-                $user['password'] = '';
-                $backEntity['success'] = 1;
-                $backEntity['info'] = $user;
-                $this->ajaxReturn(json_encode($backEntity), 'JSON');
-            } else {
-                $backEntity['success'] = 0;
-                $backEntity['info'] = '账户或密码错误';
-                $this->ajaxReturn(json_encode($backEntity), 'JSON');
-            }
+            $id = $user['id'];
+            $where['id'] = $id;
+            $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
+            $data['last_login_time'] = date('Y-m-d H:i:s');
+            D('User')->where($where)->save($data);
+            $user = D('User')->select($id);
+            $user = $user[0];
+            $user['password'] = '';
+            $backEntity['success'] = 1;
+            $backEntity['info'] = $user;
+            $this->ajaxReturn(json_encode($backEntity), 'JSON');
         } else {
             // 用户登录
             $data['name'] = $account;
             $data['password'] = $password;
             $user = D('User')->where($data)->select();
-            $user = $user[0];
             if(count($user) == 0) {
                 $backEntity['success'] = 0;
-                $backEntity['info'] = '该用户不存在';
+                $backEntity['info'] = '账户或密码错误';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
+            $user = $user[0];
             if($user['is_block'] == 1) {
                 $backEntity['success'] = 0;
                 $backEntity['info'] = '该用户已被管理员屏蔽';
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-            if(count($user) != 0) {
-                $id = $user['id'];
-                $where['id'] = $id;
-                $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
-                $data['last_login_time'] = date('Y-m-d H:i:s');
-                D('User')->where($where)->save($data);
-                $user = D('User')->select($id);
-                $user = $user[0];
-                $user['password'] = '';
-                $backEntity['success'] = 1;
-                $backEntity['info'] = $user;
-                $this->ajaxReturn(json_encode($backEntity), 'JSON');
-            } else {
-                $backEntity['success'] = 0;
-                $backEntity['info'] = '账户或密码错误';
-                $this->ajaxReturn(json_encode($backEntity), 'JSON');
-            }
+            $id = $user['id'];
+            $where['id'] = $id;
+            $data['token'] = sha1('TOKEN:' .$user['name'] .date('YmdHis'));
+            $data['last_login_time'] = date('Y-m-d H:i:s');
+            D('User')->where($where)->save($data);
+            $user = D('User')->select($id);
+            $user = $user[0];
+            $user['password'] = '';
+            $backEntity['success'] = 1;
+            $backEntity['info'] = $user;
+            $this->ajaxReturn(json_encode($backEntity), 'JSON');
         }
     }
 

@@ -29,19 +29,18 @@ class BlogApiController extends Controller {
         $blog = D('Blog');
         $user_id = I('post.user_id');
         $token = I('post.token');
-//        $data['id'] = $user_id;
-//        $data['token'] = $token;
-//        $users = D('User')->where($data)->select();
-//        if(count($users) == 0) {
-//            $backEntity['success'] = 0;
-//            $backEntity['info'] = '该用户不存在或token失效';
-//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
-//        }
-        $data['user_id'] = $user_id;
-        $blog = $blog->where($data)->order('blog_id desc')->select();
+        $where['id'] = $user_id;
+        $where['token'] = $token;
+        $users = D('User')->where($where)->select();
+        if(count($users) == 0) {
+            $backEntity['success'] = 0;
+            $backEntity['info'] = '该用户不存在或token失效';
+            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+        }
+        $where = null;
+        $where['user_id'] = $user_id;
+        $blog = $blog->where($where)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
-        $blog = D('Blog');
-        $data['title'] = I('post.title');
         if($_FILES['cover_img'] == null) {
             $path = WEB_ROOT;
             $path = explode('/', $path);
@@ -70,6 +69,7 @@ class BlogApiController extends Controller {
             $cover_img = $info['rootPath'].$info['saveName'];
             $data['cover_img'] = $cover_img;
         }
+        $data['title'] = I('post.title');
         $data['user_id'] = $user_id;
         $data['blog_id'] = $blog_id;
         $data['content'] = I('post.content');
@@ -81,9 +81,10 @@ class BlogApiController extends Controller {
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         } else {
             $blog->add();
-            $data['user_id'] = $user_id;
-            $data['blog_id'] = $blog_id;
-            $blog = D('Blog')->where($data)->select();
+            $where = null;
+            $where['user_id'] = $user_id;
+            $where['blog_id'] = $blog_id;
+            $blog = D('Blog')->where($where)->select();
             $blog = $blog[0];
             $backEntity['success'] = 1;
             $backEntity['info'] = $blog;
