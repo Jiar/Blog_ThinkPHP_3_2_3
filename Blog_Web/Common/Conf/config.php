@@ -24,4 +24,7 @@ return array(
     'LANG_LIST'        => 'zh-cn,en-us', // 允许切换的语言列表 用逗号分隔
     'VAR_LANGUAGE'     => 'l', 			 // 默认语言切换变量
 
+    'DEFAULT_UPLOADS'        =>  './Uploads/',      // 默认文件上传根目录
+
+
 );

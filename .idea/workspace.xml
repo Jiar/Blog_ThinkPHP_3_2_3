@@ -4,6 +4,7 @@
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Blog_Web/Common/Conf/config.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,6 +37,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Common/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convention.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Conf/convention.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="135" column="14" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserApiController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/UserApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,16 +74,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -93,11 +104,31 @@
       <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+            <state relative-caret-position="380">
+              <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Common/function.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Conf/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +184,6 @@
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/RoleManageController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Conf/config.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Blog_Web/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/AdminManageController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/BlogManageController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Admin/Controller/UserManageController.class.php" />
@@ -190,6 +220,7 @@
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/BlogController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/User/Controller/HomeController.class.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/HomeApiController.class.php" />
+        <option value="$PROJECT_DIR$/Blog_Web/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
       </list>
     </option>
@@ -555,6 +586,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog_ThinkPHP3.2.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog_ThinkPHP3.2.3" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog_Web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -770,14 +823,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="57993000" />
-    </task>
-    <task id="LOCAL-00075" summary="Creat Api Module">
-      <created>1477761604627</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1477761604627</updated>
+      <workItem from="1476930056695" duration="58499000" />
     </task>
     <task id="LOCAL-00076" summary="modify Api Controller">
       <created>1477761853992</created>
@@ -1115,11 +1161,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477843285985</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="modify api">
+      <created>1477843442145</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1477843442145</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282907000" />
+    <option name="totallyTimeSpent" value="283413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1219,26 +1272,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Blog_Web/Admin/View/UserManage/detailUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1530,14 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Conf/convention.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Uploads/refuse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1622,14 +1651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Library/Think/Upload.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1638,10 +1659,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Common/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/topthink/thinkphp/ThinkPHP/Conf/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="135" column="14" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog_Web/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        <state relative-caret-position="380">
+          <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>

@@ -55,7 +55,7 @@ class BlogApiController extends Controller {
         } else {
             $config = array(
                 'maxSize'    =>    3145728,
-                'rootPath'   =>    './Uploads/',
+                'rootPath'   =>    C('DEFAULT_UPLOADS'),
                 'savePath'   =>    'Blogs/',
                 'saveName'   =>    array('uniqid',''),
                 'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
@@ -69,7 +69,12 @@ class BlogApiController extends Controller {
                 $backEntity['info'] = $upload->getError();
                 $this->ajaxReturn(json_encode($backEntity), 'JSON');
             }
-            $data['cover_img'] = getWebRootPath().$info['savepath'].$info['savename'];
+
+            $backEntity['success'] = 1;
+            $backEntity['info'] = $info;
+            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+
+            $data['cover_img'] = getWebRootPath().C('DEFAULT_UPLOADS').$info['savepath'].$info['savename'];
         }
         $data['title'] = I('post.title');
         $data['user_id'] = $user_id;
