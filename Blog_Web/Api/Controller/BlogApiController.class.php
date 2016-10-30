@@ -16,10 +16,10 @@ class BlogApiController extends Controller {
      * 用户发布博文,POST
      *
      * @param user_id    用户Id
-     * @param token     用户token
-     * @param title     博文标题
+     * @param token      用户token
+     * @param title      博文标题
      * @param cover_img  博文首页图片(可选) 支持格式:jpg, gif, png, jpeg 大小限制:3145728
-     * @param content   博文内容
+     * @param content    博文内容
      *
      * @return {"success":0, "info":"info"}
      * success为0表示获取失败，1表示获取成功；无论是否获取成功info表示内容
@@ -29,7 +29,6 @@ class BlogApiController extends Controller {
         $blog = D('Blog');
         $user_id = I('post.user_id');
         $token = I('post.token');
-
         $where['id'] = $user_id;
         $where['token'] = $token;
         $users = D('User')->where($where)->select();
@@ -38,7 +37,6 @@ class BlogApiController extends Controller {
             $backEntity['info'] = '该用户不存在或token失效';
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         }
-
         $where = null;
         $where['user_id'] = $user_id;
         $blog = $blog->where($where)->order('blog_id desc')->select();
