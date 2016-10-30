@@ -52,34 +52,34 @@ class BlogApiController extends Controller {
         $where['user_id'] = $user_id;
         $blog = $blog->where($where)->order('blog_id desc')->select();
         $blog_id = $blog[0]['blog_id']+1;
-        if($_FILES['cover_img'] == null) {
-            $path = WEB_ROOT;
-            $path = explode('/', $path);
-            $rootName = '/';
-            if(count($path) > 2) {
-                $rootName = $rootName .$path[count($path)-2] .'/';
-            }
-            $data['cover_img'] = $rootName .'Public/Static/images/blog-cover-default.jpeg';
-        } else {
-            $config = array(
-                'maxSize'    =>    3145728,
-                'rootPath'   =>    '/Uploads/',
-                'savePath'   =>    'Blogs/',
-                'saveName'   =>    array('uniqid',''),
-                'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
-                'autoSub'    =>    true,
-                'subName'    =>    array('date','Ymd'),
-            );
-            $upload = new \Think\Upload($config);
-            $info = $upload->uploadOne($_FILES['cover_img']);
-            if(!$info) {
-                $backEntity['success'] = 0;
-                $backEntity['info'] = $upload->getError();
-                $this->ajaxReturn(json_encode($backEntity), 'JSON');
-            }
-            $cover_img = $info['rootPath'].$info['saveName'];
-            $data['cover_img'] = $cover_img;
-        }
+//        if($_FILES['cover_img'] == null) {
+//            $path = WEB_ROOT;
+//            $path = explode('/', $path);
+//            $rootName = '/';
+//            if(count($path) > 2) {
+//                $rootName = $rootName .$path[count($path)-2] .'/';
+//            }
+//            $data['cover_img'] = $rootName .'Public/Static/images/blog-cover-default.jpeg';
+//        } else {
+//            $config = array(
+//                'maxSize'    =>    3145728,
+//                'rootPath'   =>    '/Uploads/',
+//                'savePath'   =>    'Blogs/',
+//                'saveName'   =>    array('uniqid',''),
+//                'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+//                'autoSub'    =>    true,
+//                'subName'    =>    array('date','Ymd'),
+//            );
+//            $upload = new \Think\Upload($config);
+//            $info = $upload->uploadOne($_FILES['cover_img']);
+//            if(!$info) {
+//                $backEntity['success'] = 0;
+//                $backEntity['info'] = $upload->getError();
+//                $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//            }
+//            $cover_img = $info['rootPath'].$info['saveName'];
+//            $data['cover_img'] = $cover_img;
+//        }
         $data['title'] = I('post.title');
         $data['user_id'] = $user_id;
         $data['blog_id'] = $blog_id;

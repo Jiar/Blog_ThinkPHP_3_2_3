@@ -93,10 +93,15 @@
       <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="14" />
+            <state relative-caret-position="-198">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="16" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
+                <marker date="1477816349000" expanded="true" signature="1650:1983" ph="..." />
+                <marker date="1477816349000" expanded="true" signature="1793:1877" ph="..." />
+                <marker date="1477816349000" expanded="true" signature="1991:2872" ph="..." />
+                <marker date="1477816349000" expanded="true" signature="2022:2411" ph="..." />
+                <marker date="1477816349000" expanded="true" signature="2556:2749" ph="..." />
               </folding>
             </state>
           </provider>
@@ -752,14 +757,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="51139000" />
-    </task>
-    <task id="LOCAL-00054" summary="just for test instll">
-      <created>1477633233099</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1477633233099</updated>
+      <workItem from="1476930056695" duration="51335000" />
     </task>
     <task id="LOCAL-00055" summary="modify install file">
       <created>1477633499619</created>
@@ -1097,11 +1095,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477816025788</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="modify api">
+      <created>1477816172771</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1477816172772</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276053000" />
+    <option name="totallyTimeSpent" value="276249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1622,10 +1627,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="-198">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="16" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
+            <marker date="1477816349000" expanded="true" signature="1650:1983" ph="..." />
+            <marker date="1477816349000" expanded="true" signature="1793:1877" ph="..." />
+            <marker date="1477816349000" expanded="true" signature="1991:2872" ph="..." />
+            <marker date="1477816349000" expanded="true" signature="2022:2411" ph="..." />
+            <marker date="1477816349000" expanded="true" signature="2556:2749" ph="..." />
           </folding>
         </state>
       </provider>
