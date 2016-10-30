@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,8 +83,8 @@
       <file leaf-file-name="BlogApiController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="262">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="e#6#110#0#PHP" expanded="true" />
               </folding>
@@ -449,14 +450,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="53484000" />
-    </task>
-    <task id="LOCAL-00059" summary="modify install file">
-      <created>1477640739475</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1477640739475</updated>
+      <workItem from="1476930056695" duration="53600000" />
     </task>
     <task id="LOCAL-00060" summary="modify install file">
       <created>1477640752702</created>
@@ -794,11 +788,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477837484939</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="add token validate&#10;add Uploads">
+      <created>1477838015359</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1477838015359</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278398000" />
+    <option name="totallyTimeSpent" value="278514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -864,7 +865,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加管理员RBAC操作（还有BUG，白天再优化，晚安自己）" />
     <MESSAGE value="优化" />
     <MESSAGE value="添加安装文件" />
     <MESSAGE value="项目修整：&#10;1.静态资源采用cdn加速&#10;2.准备支持中英文&#10;3.修复项目移动到服务器后运行的路径问题&#10;" />
@@ -889,7 +889,8 @@
     <MESSAGE value="add token validate" />
     <MESSAGE value="modify api" />
     <MESSAGE value="remove token validate" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove token validate" />
+    <MESSAGE value="add token validate&#10;add Uploads" />
+    <option name="LAST_COMMIT_MESSAGE" value="add token validate&#10;add Uploads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1319,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/Api/Controller/BlogApiController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="262">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
             <element signature="e#6#110#0#PHP" expanded="true" />
           </folding>
