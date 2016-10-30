@@ -29,13 +29,23 @@ class BlogApiController extends Controller {
         $blog = D('Blog');
         $user_id = I('post.user_id');
         $token = I('post.token');
+
+//        $where['id'] = $user_id;
+//        $where['token'] = $token;
+//        $users = D('User')->where($where)->select();
+//        if(count($users) == 0) {
+//            $backEntity['success'] = 0;
+////            $backEntity['info'] = '该用户不存在或token失效';
+//            $backEntity['info'] = $users;
+//            $this->ajaxReturn(json_encode($backEntity), 'JSON');
+//        }
+
         $where['id'] = $user_id;
-        $where['token'] = $token;
-        $users = D('User')->where($where)->select();
-        if(count($users) == 0) {
+        $user = D('User')->where($where)->select();
+        $user = $user[0];
+        if($user['token'] != $token) {
             $backEntity['success'] = 0;
-//            $backEntity['info'] = '该用户不存在或token失效';
-            $backEntity['info'] = $users;
+            $backEntity['info'] = '该用户不存在或token失效';
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         }
         $where = null;
