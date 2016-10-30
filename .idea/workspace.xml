@@ -61,9 +61,11 @@
       <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Blog_Web/User/View/Home/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="90" column="114" selection-start-line="90" selection-start-column="114" selection-end-line="90" selection-end-column="114" />
-              <folding />
+            <state relative-caret-position="375">
+              <caret line="90" column="179" selection-start-line="90" selection-start-column="179" selection-end-line="90" selection-end-column="179" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -866,14 +868,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="60033000" />
-    </task>
-    <task id="LOCAL-00082" summary="modify api">
-      <created>1477771666282</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1477771666282</updated>
+      <workItem from="1476930056695" duration="60308000" />
     </task>
     <task id="LOCAL-00083" summary="add api addBlog">
       <created>1477774558408</created>
@@ -1211,11 +1206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477846084937</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="change bg image">
+      <created>1477846179249</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1477846179249</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284947000" />
+    <option name="totallyTimeSpent" value="285222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1736,9 +1738,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog_Web/User/View/Home/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="90" column="114" selection-start-line="90" selection-start-column="114" selection-end-line="90" selection-end-column="114" />
-          <folding />
+        <state relative-caret-position="375">
+          <caret line="90" column="179" selection-start-line="90" selection-start-column="179" selection-end-line="90" selection-end-column="179" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#volist#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
