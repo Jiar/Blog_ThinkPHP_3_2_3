@@ -32,6 +32,8 @@ class BlogApiController extends Controller {
         $where['id'] = $user_id;
         $where['token'] = $token;
         $users = D('User')->where($where)->select();
+        var_dump($users);
+        return;
         if(count($users) == 0) {
             $backEntity['success'] = 0;
             $backEntity['info'] = '该用户不存在或token失效';
