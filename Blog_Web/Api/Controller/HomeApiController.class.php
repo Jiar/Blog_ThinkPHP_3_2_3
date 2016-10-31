@@ -22,6 +22,7 @@ class HomeApiController extends Controller {
      * success为0表示获取失败，1表示获取成功；无论是否获取成功info表示内容
      */
     public function user_action($username) {
+        header("Access-Control-Allow-Origin: *");
         $user = D("User");
         $result = $user->getByName($username);
         if(count($result) == 0) {
