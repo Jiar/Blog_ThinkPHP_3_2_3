@@ -36,7 +36,7 @@ class HomeApiController extends Controller {
             $blogs = $blogs->where($data)->select();
             $info['userId'] = $userId;
             $info['blogs'] = $blogs;
-            $backEntity['success'] = 0;
+            $backEntity['success'] = 1;
             $backEntity['info'] = $info;
             $this->ajaxReturn(json_encode($backEntity), 'JSON');
         }
