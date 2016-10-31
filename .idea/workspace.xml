@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ddd445e-59e0-434e-8dc3-49c70aa4404c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog_Web/Api/Controller/HomeApiController.class.php" afterPath="$PROJECT_DIR$/Blog_Web/Api/Controller/HomeApiController.class.php" />
     </list>
     <ignored path="Blog_ThinkPHP3.2.3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -882,14 +881,7 @@
       <workItem from="1476105436002" duration="91097000" />
       <workItem from="1476799532731" duration="933000" />
       <workItem from="1476927314476" duration="161000" />
-      <workItem from="1476930056695" duration="61656000" />
-    </task>
-    <task id="LOCAL-00088" summary="modify user.html">
-      <created>1477777199063</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1477777199063</updated>
+      <workItem from="1476930056695" duration="61894000" />
     </task>
     <task id="LOCAL-00089" summary="modify user.html">
       <created>1477778423186</created>
@@ -1227,11 +1219,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477892819549</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="modify bug">
+      <created>1477895017986</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1477895017986</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286570000" />
+    <option name="totallyTimeSpent" value="286808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1244,9 +1243,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539342" sideWeight="0.49245283" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36144578" sideWeight="0.5343348" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28612304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1297,7 +1296,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="路由修正" />
     <MESSAGE value="remove ie8-responsive-file-warning.js" />
     <MESSAGE value="fix table bug" />
     <MESSAGE value="修改用户入口文件" />
@@ -1322,7 +1320,8 @@
     <MESSAGE value="fix bug addBlogForm_action" />
     <MESSAGE value="change bg image" />
     <MESSAGE value="home api Access-Control-Allow-Origin: *" />
-    <option name="LAST_COMMIT_MESSAGE" value="home api Access-Control-Allow-Origin: *" />
+    <MESSAGE value="modify bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
